@@ -1,0 +1,478 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.23)  7 APR 2020 09:31
+entering extended mode
+**./mgr_v1.tex
+(mgr_v1.tex
+LaTeX2e <2019-10-01> patch level 3
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
+Document Class: report 2019/10/25 v1.4k Standard LaTeX document class
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.st
+y"
+Package: babel 2019/10/15 3.35 The Babel package
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+"
+File: switch.def 2019/10/15 3.35 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-polish\polis
+h.ldf"
+Language: polish 2005/03/31 v1.2l Polish support from the babel system
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/10/15 3.35 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
+\bbl@dirlevel=\count90
+)
+Package babel Info: Making " an active character on input line 83.
+\pl@left=\dimen104
+\pl@down=\dimen105
+\pl@right=\dimen106
+\pl@temp=\dimen107
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
+ish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty"
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty
+"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifxetex.st
+y"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen108
+\Gm@wd@mp=\dimen109
+\Gm@odd@mp=\dimen110
+\Gm@even@mp=\dimen111
+\Gm@layoutwidth=\dimen112
+\Gm@layoutheight=\dimen113
+\Gm@layouthoffset=\dimen114
+\Gm@layoutvoffset=\dimen115
+\Gm@dimlist=\toks17
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+cfg"))
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
+.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
+y"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
+ty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@tempdima=\dimen121
+\caption@indent=\dimen122
+\caption@parindent=\dimen123
+\caption@hangindent=\dimen124
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count94
+\c@continuedfloat=\count95
+)
+\c@subfigure=\count96
+\c@subtable=\count97
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.st
+y"
+\wrapoverhang=\dimen125
+\WF@size=\dimen126
+\c@WF@wrappedlines=\count98
+\WF@box=\box27
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+) (mgr_v1.aux
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+)
+\openout1 = `mgr_v1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 398.3386pt, 99.58464pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=398.3386pt
+* \textheight=702.78308pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen127
+\scratchbox=\box28
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen128
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks20
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifluatex.s
+ty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))))
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ [1
+
+{C:/Users/Aneta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+[2
+
+] (mgr_v1.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+)
+\tf@toc=\write3
+\openout3 = `mgr_v1.toc'.
+
+ [3
+
+]
+Chapter 1.
+[4
+
+
+]
+Chapter 2.
+[5
+
+]
+<./Figures/Fig_2.1a.png, id=32, 481.8pt x 481.8pt>
+File: ./Figures/Fig_2.1a.png Graphic file (type png)
+<use ./Figures/Fig_2.1a.png>
+Package pdftex.def Info: ./Figures/Fig_2.1a.png  used on input line 139.
+(pdftex.def)             Requested size: 199.16399pt x 170.71304pt.
+<./Figures/Fig_2.1b.png, id=33, 371.88937pt x 367.3725pt>
+File: ./Figures/Fig_2.1b.png Graphic file (type png)
+<use ./Figures/Fig_2.1b.png>
+Package pdftex.def Info: ./Figures/Fig_2.1b.png  used on input line 144.
+(pdftex.def)             Requested size: 219.09505pt x 176.40965pt.
+
+Overfull \hbox (19.92575pt too wide) in paragraph at lines 144--145
+[][] 
+ []
+
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 138--148
+[]$[]$ $[]$ 
+ []
+
+[6 <./Figures/Fig_2.1a.png> <./Figures/Fig_2.1b.png>] [7]
+Chapter 3.
+
+Overfull \hbox (11.20786pt too wide) in paragraph at lines 166--199
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--199
+
+ []
+
+
+Overfull \hbox (33.99536pt too wide) in paragraph at lines 201--221
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--221
+
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Overfull \hbox (14.37723pt too wide) in paragraph at lines 224--225
+[]\T1/cmr/m/n/12 The com-par-i-son of mea-sure-ment be-fore ton-sil-lec-tomy wa
+s made with Wilcoxon
+ []
+
+<./Figures/Fig_3.1a.png, id=47, 371.88937pt x 367.3725pt>
+File: ./Figures/Fig_3.1a.png Graphic file (type png)
+<use ./Figures/Fig_3.1a.png>
+Package pdftex.def Info: ./Figures/Fig_3.1a.png  used on input line 233.
+(pdftex.def)             Requested size: 199.17163pt x 170.71992pt.
+<./Figures/Fig_3.1b.png, id=48, 348.55219pt x 352.31625pt>
+File: ./Figures/Fig_3.1b.png Graphic file (type png)
+<use ./Figures/Fig_3.1b.png>
+Package pdftex.def Info: ./Figures/Fig_3.1b.png  used on input line 238.
+(pdftex.def)             Requested size: 199.17142pt x 170.71727pt.
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 232--242
+[]$[]$ $[]$ 
+ []
+
+[9 <./Figures/Fig_3.1a.png> <./Figures/Fig_3.1b.png>]
+<./Figures/Fig_3.2.png, id=54, 501.072pt x 192.11775pt>
+File: ./Figures/Fig_3.2.png Graphic file (type png)
+<use ./Figures/Fig_3.2.png>
+Package pdftex.def Info: ./Figures/Fig_3.2.png  used on input line 254.
+(pdftex.def)             Requested size: 400.85815pt x 153.6944pt.
+
+Overfull \hbox (2.51956pt too wide) in paragraph at lines 254--255
+[][] 
+ []
+
+<./Figures/Fig_3.3.png, id=56, 309.5565pt x 285.4665pt>
+File: ./Figures/Fig_3.3.png Graphic file (type png)
+<use ./Figures/Fig_3.3.png>
+Package pdftex.def Info: ./Figures/Fig_3.3.png  used on input line 260.
+(pdftex.def)             Requested size: 185.73532pt x 171.2812pt.
+
+Overfull \hbox (6.48418pt too wide) in paragraph at lines 260--261
+[][] 
+ []
+
+[10 <./Figures/Fig_3.2.png> <./Figures/Fig_3.3.png>]
+<./Figures/Fig_3.4.png, id=62, 425.33907pt x 358.33875pt>
+File: ./Figures/Fig_3.4.png Graphic file (type png)
+<use ./Figures/Fig_3.4.png>
+Package pdftex.def Info: ./Figures/Fig_3.4.png  used on input line 272.
+(pdftex.def)             Requested size: 404.06981pt x 340.41988pt.
+
+Overfull \hbox (5.73122pt too wide) in paragraph at lines 272--273
+[][] 
+ []
+
+[11 <./Figures/Fig_3.4.png>]
+Chapter 4.
+[12
+
+] [13
+
+] (mgr_v1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4239 strings out of 492450
+ 65026 string characters out of 3120004
+ 149799 words of memory out of 3000000
+ 8522 multiletter control sequences out of 15000+200000
+ 16958 words of font info for 37 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 51i,7n,46p,851b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecbx1440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecti1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Aneta\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Aneta\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Us
+ers\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.
+pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecbx2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecrm2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\font
+s/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Aneta\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
+Output written on mgr_v1.pdf (14 pages, 222969 bytes).
+PDF statistics:
+ 500 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

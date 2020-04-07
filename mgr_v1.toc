@@ -1,0 +1,12 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{4}%
+\contentsline {chapter}{\numberline {2}Material and methods}{5}%
+\contentsline {section}{\numberline {2.1}Material}{5}%
+\contentsline {section}{\numberline {2.2}Methods}{5}%
+\contentsline {chapter}{\numberline {3}Results}{8}%
+\contentsline {section}{\numberline {3.1}Comparison between groups}{8}%
+\contentsline {subsection}{\numberline {3.1.1}General statistics}{8}%
+\contentsline {subsection}{\numberline {3.1.2}Halitometry results}{9}%
+\contentsline {section}{\numberline {3.2}PCA results}{10}%
+\contentsline {section}{\numberline {3.3}Additional factors}{11}%
+\contentsline {chapter}{\numberline {4}Discussion}{12}%
