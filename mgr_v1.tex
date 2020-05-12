@@ -124,9 +124,11 @@ Another exclusion criteria included smokers, heavy alcoholic drinkers, improper 
 \section{Methods}
 
 Patients underwent both subjective and objective evaluation of oral odor. 
-For a subjective assessment of an unpleasant odor in the mouth each patient underwent organoleptic examination before tonsillectomy. Patients were neither allowed to take antibiotics for a period of three weeks, consume garlic, onion and spicy dishes for 24 hours nor apply perfume. Within 12 hours, it was also recommended to avoid food intake and drinks, brush teeth, use breath fresheners and smoke cigarettes. During the study, the smell air of exhaled through the mouth was compared with the smell of air exhaled through the nose (when mouth closed). The patient then exhaled into a transparent tube 10 cm long and 2.5 mm in diameter. In order to assess the intensity of the unpleasant smell from the mouth a six-grade Rosenberg scale was used which is the most widely used scale of halitosis. \
+For a subjective assessment of an unpleasant odor in the mouth each patient underwent organoleptic examination before tonsillectomy. Patients were neither allowed to take antibiotics for a period of three weeks, consume garlic, onion and spicy dishes for 24 hours nor apply perfume. Within 12 hours, it was also recommended to avoid food intake and drinks, brush teeth, use breath fresheners and smoke cigarettes. During the study, the smell of air exhaled through the mouth was compared with the smell of air exhaled through the nose (when mouth closed). The patient then exhaled into a transparent tube 10 cm long and 2.5 mm in diameter. In order to assess the intensity of the unpleasant smell from the mouth a six-grade Rosenberg \cite{Rosenberg92} scale was used which is the most widely used scale of halitosis. The odor was classified between 0 and 5, where: 0 - absence of odor, 1 - barely noticeable odor, 2 - slight malodor, 3 - moderate malodor, 4 - strong malodor and 5 - severe malodor.\
 
-For objective assessment of halitosis each patient underwent a Man-hal-II Halimeter test before tonsillectomy. In order to obtain reliable results, patients could not eat, drink, smoke, chew gum, brush their teeth, use the brush, fresheners or oral hygiene products for 12 hours prior to the halimetric test. It was also recommended not to use cosmetics such as perfumes, aftershave or lipstick. \
+For objective assessment of halitosis each patient underwent a Man-hal-II Halimeter test as well. This sulfide monitor measures volatile sulfur compounds (VSCs) such as hydrogen sulfide, methyl mercaptan and dimethyl sulfide which are contributing factors for halitosis. Each sample was taken after 3 minute re-stabilization period when patients were breathing through the nose with  mouths kept closed. During the test the device's straw was inserted into the subject’s mouth and one was asked to exhale briefly for 30 seconds. 
+The procedure was repeated in three trials for each patient and the peaks' values were recorded in parts per billion (ppb) sulfide equivalents \cite{Alasqah16}.
+In order to obtain reliable results, patients could not eat, drink, smoke, chew gum, brush their teeth, use the brush, fresheners or oral hygiene products for 12 hours prior to the halimetric test. It was also recommended not to use cosmetics such as perfumes, aftershave or lipstick. \
 
 Organoleptic and halimetric examination was repeated for each patient, at least 2-3 months after removal of the palatine tonsils and completion of the healing process.
 
@@ -141,8 +143,8 @@ The value of the average of the three measurements of VSC was used for further s
 \label{Fig_2.1a}
 \end{subfigure}
 \begin{subfigure}{0.5\textwidth}
-\includegraphics[width=1.1\linewidth, height=6.2cm]{./Figures/Fig_2.1b}
-\caption{the gender distribution within groups}
+\includegraphics[width=1.1\linewidth, height=6cm]{./Figures/Fig_2.1b}
+\caption{the gender distribution within groups A: < 100 ppb,  B: 100 - 180 ppb, C: > 180 ppb VSC}
 \label{Fig_2.1b}
 \end{subfigure}
  
@@ -168,21 +170,21 @@ The gender distribution was included in each group. Considered level of signific
 \hline Feature 				& Female 	& Male 		& Total 		&  Comparison \\
  		 					& n = 29 	& n = 12	& n = 41	&  (\textit{p-value}) \\
 \hline
-\bf{Age}						&			&			&			&		\\
-\indent mean					& 26.69		& 27.83		& 27.02		& 		\\
+\bf{Age}					&			&			&			&		\\
+\indent mean				& 26.69		& 27.83		& 27.02		& 		\\
 \indent sd					& 8.49		& 6.32		& 7.86		& 0.6391 \\
 \indent me					& 24.00		& 27		& 25.00		& 		\\
-\indent spread				& 18.00-56.00 & 19.00-36.00	& 18.00-56.00	 & \\
+\indent spread				& 18.00-56.00 & 19.00-36.00	& 18.00-56.00 & \\
 \hline
 
-\bf{Living place} 				&			&			&			&		\\
+\bf{Living place} 			&			&			&			&		\\
 \indent village				& 5 (17.24)	& 0 (0.00)	& 5	(12.20)	& 		\\
 \indent town					& 2 (6.90)	& 1	(8.33) 	& 3	(17.85) 	&  0.3078 \\
 \indent city					& 22 (75.86)	& 11 (91.67) & 33 (80.49) & 		\\
 \hline
 
 \bf{Profession} 				&			&			&			&		\\
-\indent school-age student		& 2 (6.90)	& 2 (16.67)	& 4	(9.76) 	& 		\\
+\indent school-age student	& 2 (6.90)	& 2 (16.67)	& 4	(9.76) 	& 		\\
 \indent student				& 6 (20.69)	& 1	(8.33) 	& 7	(17.10) 	& 0.1834 \\
 \indent blue-collar worker		& 3 (10.35)	& 4 (33.33) 	& 7 (17.10) 	& 		\\
 \indent white-collar worker	& 18 (62.07)	& 5 (41.67) 	& 23 (56.10) & 		\\
@@ -195,7 +197,8 @@ The gender distribution was included in each group. Considered level of signific
 \hline
 
 \end{tabular} \\ \\
-No statistically significant difference was observed in terms of analyzed features (p > 0.05).
+
+The comparison of features: Age, Living place, Profession and Education between men and women was made with Student's t test (\textit{stats::t.test}) after checking the assumption of normality and homogeneity of variance. No statistically significant difference was observed in terms of analyzed features (p > 0.05).
 
 \subsection{Halitometry results}
 \noindent
@@ -204,28 +207,25 @@ No statistically significant difference was observed in terms of analyzed featur
  		 					& n = 29 	& n = 12	& n = 41	&  (\textit{p-value}) \\
 \hline
 \bf{Before tonsillectomy}		&			&			&			&		\\
-\indent mean					& 115.03	& 107.92	& 113.00	& 		\\
-\indent sd					& 37.89		& 67.81		& 47.76		& 0.5378* \\
+\indent mean				& 115.03	& 107.92	& 113.00	& 		\\
+\indent sd					& 37.89		& 67.81		& 47.76		& 0.5378 \\
 \indent me					& 120.00	& 105.00	& 117.00	& 		\\
-\indent spread				& 22.00-186.00 & 25.00-238.00	& 22.00-238.00	 & \\
+\indent spread				& 22.00-186.00 & 25.00-238.00 & 22.00-238.00	 & \\
 \hline
 
 \bf{After tonsillectomy}		&			&			&			&		\\
-\indent mean					& 43.52		& 45.08		& 43.98		& 		\\
-\indent sd					& 19.20		& 24.81		& 20.66		& 0.8185* \\
+\indent mean				& 43.52		& 45.08		& 43.98		& 		\\
+\indent sd					& 19.20		& 24.81		& 20.66		& 0.8185 \\
 \indent me					& 50.00		& 36.00		& 40.00 		& 		\\
-\indent spread				& 7.00-80.00 & 23.00-113.00	& 7.00-113.00	 & \\
+\indent spread				& 7.00-80.00 & 23.00-113.00	& 7.00-113.00 & \\
 \hline
 
 \end{tabular} \\ \\
 
-*Wilcoxon test\\
-
 The comparison of measurement before tonsillectomy was made with Wilcoxon test (\textit{stats::wilcox.test}) due to heterogeneity of variance between groups (female vs male, \textit{p-value} = 0.01564). 
 
-The comparison of measurement before tonsillectomy was made with Welch Two Sample t-test (\textit{stats::t.test} with paired=FALSE argument). According to p-value = 0.8471 we do have basis to accept the null hypothesis that the means in both groups are equal. 
+The comparison of VSC before and after tonsillectomy was made with Welch Two Sample t-test (\textit{stats::t.test} with paired=FALSE argument). According to p-value = 0.8471 we do have basis to accept the null hypothesis that the means in both groups are equal. 
 
-After tonsillectomy, the VSC level dropped by 106.51 ppb.
 
 \begin{figure}[h]
  
@@ -240,10 +240,12 @@ After tonsillectomy, the VSC level dropped by 106.51 ppb.
 \label{Fig_3.1b}
 \end{subfigure}
  
-\caption{Levels of VSC in groups with split on gender.}
+\caption{Levels of VSC in groups with split on gender. Groups A: < 100 ppb,  B: 100 - 180 ppb, C: > 180 ppb VSC}
 \label{Fig_3.1}
 \end{figure}
 
+After tonsillectomy, there was only one patient with light form of halitosis - a 29-year old man with 113 ppb of VSC.
+The avarage level of VSC dropped by 106.51 ppb.
 
 \section{PCA results}
 
@@ -264,12 +266,12 @@ In order to determine the minimum number of principal components (PCs) that acco
 
 An alternative method of estimating the number of principal components is the scree plot, which orders the eigenvalues in descending order. The number of PCs is selected at the point where there is a relative decrease in the amount of variance explained by given component. In that case, both methods indicate the same cut-off point which is PC3 meaning that first three principal components explain 82.61\% of the variation in the data.
 
-Examining the magnitude and direction of the coefficients for the original variables allows to interpret each principal component. In these results, first and second principal component has positive associations with the average measurements of VSC (before and after tonsillectomy), so this component primarily measures surgery effectiveness. The second component has positive associations with individual measurements of VSC, so this component primarily measures repeatability of results (?). The third component has large positive associations with height and weight, so this component primarily measures the patient's body mass index. 
+Examining the magnitude and direction of the coefficients for the original variables allows to interpret each principal component. In these results, first and second principal component has positive associations with the average measurements of VSC (before and after tonsillectomy), so this component primarily measures surgery effectiveness. The second component has positive associations with individual measurements of VSC, so this component primarily measures repeatability of results. The third component has large positive associations with height and weight, so this component primarily measures the patient's body mass index. 
 
-A PCA biplot (\ref{Fig_3.4}) shows both principal component scores of samples (here already grouped into three) and loadings of variables (so called loading plot). The further away vectors (variables) are from the origin, the more influence they have on that principal component.  From loading plots we can notice how well are the variables correlated with each other: a small angle implies positive correlation, a large one suggests negative correlation. A right angle indicates no correlation between two features.
+A PCA biplot (Fig. \ref{Fig_3.4}) shows both principal component scores of samples (here already grouped into three) and loadings of variables (so called loading plot). The further away vectors (variables) are from the origin, the more influence they have on that principal component.  From loading plots we can notice how well are the variables correlated with each other: a small angle implies positive correlation, a large one suggests negative correlation. A right angle indicates no correlation between two features.
 
 \begin{figure}[h]
-	\includegraphics[scale=0.95]{./Figures/Fig_3.4}
+	\includegraphics{./Figures/Fig_3.4}
 	\caption{Biplot.}
 	\label{Fig_3.4}
 \end{figure}	
@@ -289,9 +291,11 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod t
 %--------------- Bibliografia ---------------
 
 \begin{thebibliography}{9}
-\bibitem{Lee04}[1] Lee PP, Mak WY, Newsome P (2004) \emph{The aetiology and treatment of oral halitosis: an update}, Hong Kong Medical Journal  10, 414–418.
-\bibitem[2]{ }  \emph{ }
-\bibitem[3]{ } \emph{}
+\bibitem{Rosenberg92} Rosenberg M, McCulloch CAG (1992) \emph{Measurement of Oral Malodor: Current Methods and Future Prospects}, Journal of Periodontology, 63, 776–782.
+\bibitem{Alasqah16} Alasqah M, Khan S, Elqomsan MA, Gufran K, Kola Z, Bin Hamza MO (2016) \emph{Assessment of halitosis using the organoleptic method and volatile sulfur compounds monitoring}, Journal of Dental Research and Review 3: 3, 94-98.
+\bibitem{Lee04} Lee PP, Mak WY, Newsome P (2004) \emph{The aetiology and treatment of oral halitosis: an update}, Hong Kong Medical Journal  10, 414–418.
+
+
 \bibitem[4]{ }   \emph{ }
 \end{thebibliography}
 

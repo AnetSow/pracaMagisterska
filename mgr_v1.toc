@@ -7,6 +7,6 @@
 \contentsline {section}{\numberline {3.1}Comparison between groups}{8}%
 \contentsline {subsection}{\numberline {3.1.1}General statistics}{8}%
 \contentsline {subsection}{\numberline {3.1.2}Halitometry results}{9}%
-\contentsline {section}{\numberline {3.2}PCA results}{10}%
-\contentsline {section}{\numberline {3.3}Additional factors}{11}%
-\contentsline {chapter}{\numberline {4}Discussion}{12}%
+\contentsline {section}{\numberline {3.2}PCA results}{9}%
+\contentsline {section}{\numberline {3.3}Additional factors}{12}%
+\contentsline {chapter}{\numberline {4}Discussion}{13}%

@@ -2,11 +2,12 @@
 library(tidyverse)
 library(dplyr)
 library(moments)
-library(factoextra)
-library(FactoMineR)
+
+options(warn = -1)
+
 
 # Data loading
-data <- read.csv(file="./Data/dane_mgr.csv", header=TRUE, sep=";")
+data <- read.csv(file=choose.files(), header=TRUE, sep=";")
 
 # Data preprocessing
 str(data) # data structure infromation
@@ -39,10 +40,6 @@ data %>%
 
 summary(data$Wiek) # summary for age
 
-wiek_m <- data$Wiek[data$Plec=="M"]
-wiek_k <- data$Wiek[data$Plec=="K"]
-t.test(wiek_m, wiek_k, paired=FALSE)
-
 
 data %>% 
   count(KategoriaZawodowa) %>% 
@@ -54,6 +51,15 @@ data %>%
 
 
   # 1.2 WITH SPLIT ON GENDER
+
+age_m <- filter(data, Plec=='M')$Wiek
+age_f <- filter(data, Plec=='K')$Wiek
+
+shapiro.test(age_m) # p-value = 0.181
+shapiro.test(age_f) # p-value = 1.207e-05
+
+# Wilcoxon rank sum test —ranksum— testuje hipotezę zerową, że dwie próby X i Y, które ze sobą porównujemy pochodzą z populacji o takiej samej medianie. Próby X i Y nie są sparowane.
+wilcox.test(age_m, age_f) # p-value = 0.3147
 
 livingPlace <- data %>%
             group_by(Plec) %>% 

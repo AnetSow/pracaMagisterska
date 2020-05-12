@@ -1,17 +1,22 @@
+library(factoextra)
+library(FactoMineR)
+
 # Selecting numerical variables for PCA
 nums <- unlist(lapply(data, is.integer)) 
-dataPCA <- data[ , nums]
-colnames(dataPCA)
-dataPCA <- dataPCA[ , !names(dataPCA) %in% c("SkalaRosenberga")]
-summary(dataPCA) # 41 individuals, 11 variables
+data_PCA <- data[ , nums]
+colnames(data_PCA)
+data_PCA <- data_PCA[ , !names(data_PCA) %in% c("SkalaRosenberga")]
+new_names <- c("Age", "Meas.Ia", "Meas.Ib", "Meas.Ic", "AvgMeas.I", "Meas.IIa", "Meas.IIb", "Meas.IIc", "AvgMeas.II", "Height", "Weight")
+colnames(data_PCA) <- new_names
+summary(data_PCA) # 41 individuals, 11 variables
 
 
 # Calculating PCA
-pca <- PCA(dataPCA, graph = FALSE) # data are standarized by default
+pca <- PCA(data_PCA, graph = FALSE) # data are standarized by default
 print(pca)
 
-eig.val <- pca$eig
-eig.val
+eig_values <- pca$eig
+eig_values
 
 # eigenvalues for PC1-PC3  > 1.0 --> PC3 can be taken as the cut-off point, as 82.6% of the total variance is explained by the first 3 principal components
 # An alternative method of estimating the number of principal components is the scree plot, which presents eigenvalues in descending order. The number of PC is selected at the point where there is a relative decrease in the amount of variance explained by the component (Jollife 2002, Peres-Neto, Jackson, and Somers (2005)).
@@ -54,10 +59,10 @@ fviz_pca_var(pca, col.var = "contrib",
              gradient.cols = c("#C2185B", "#C5E1A5", "#1B5E20"))
 
 
-res.desc <- dimdesc(pca, axes = c(1,2), proba = 0.05)
+res_desc <- dimdesc(pca, axes = c(1,2), proba = 0.05)
 # Description of dimension 1
-res.desc$Dim.1
-res.desc$Dim.2 # wsz?dzie p-value < 0.05 zatem odrzucamy H0, ?e prawdziwy wsp??czynnik korelacji = 0
+res_desc$Dim.1
+res_desc$Dim.2 # wsz?dzie p-value < 0.05 zatem odrzucamy H0, ?e prawdziwy wsp??czynnik korelacji = 0
 pca$var
 
 # RESULTS FOR OBSERVATIONS (individuals)
@@ -76,11 +81,11 @@ fviz_pca_ind(pca, col.ind = "cos2", pointsize = 2,
 
 fviz_cos2(pca, choice = "ind", axes = 1:2)
 
-# dataPCA <- mutate(dataPCA, Grupa = SredniaPomiar1)
-# dataPCA$Grupa[dataPCA$SredniaPomiar1 <= 100] = "A"
-# dataPCA$Grupa[dataPCA$SredniaPomiar1 > 100 & dataPCA$SredniaPomiar1 <= 180] = "B"
-# dataPCA$Grupa[dataPCA$SredniaPomiar1 > 180 & dataPCA$SredniaPomiar1 <= 250] = "C"
-# dataPCA$Grupa[dataPCA$SredniaPomiar1 > 250] = "D"
+# data_PCA <- mutate(data_PCA, Grupa = SredniaPomiar1)
+# data_PCA$Grupa[data_PCA$SredniaPomiar1 <= 100] = "A"
+# data_PCA$Grupa[data_PCA$SredniaPomiar1 > 100 & data_PCA$SredniaPomiar1 <= 180] = "B"
+# data_PCA$Grupa[data_PCA$SredniaPomiar1 > 180 & data_PCA$SredniaPomiar1 <= 250] = "C"
+# data_PCA$Grupa[data_PCA$SredniaPomiar1 > 250] = "D"
 
 fviz_pca_ind(pca,
              geom.ind = "point", # show points only (but not "text")

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.23)  7 APR 2020 09:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.23)  14 APR 2020 20:51
 entering extended mode
 **./mgr_v1.tex
 (mgr_v1.tex
@@ -169,14 +169,7 @@ y"
 \WF@box=\box27
 \WF@everypar=\toks18
 Package: wrapfig 2003/01/31  v 3.6
-) (mgr_v1.aux
-
-LaTeX Warning: Label ` ' multiply defined.
-
-
-LaTeX Warning: Label ` ' multiply defined.
-
-)
+) (mgr_v1.aux)
 \openout1 = `mgr_v1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -332,59 +325,62 @@ Chapter 2.
 <./Figures/Fig_2.1a.png, id=32, 481.8pt x 481.8pt>
 File: ./Figures/Fig_2.1a.png Graphic file (type png)
 <use ./Figures/Fig_2.1a.png>
-Package pdftex.def Info: ./Figures/Fig_2.1a.png  used on input line 139.
+Package pdftex.def Info: ./Figures/Fig_2.1a.png  used on input line 141.
 (pdftex.def)             Requested size: 199.16399pt x 170.71304pt.
 <./Figures/Fig_2.1b.png, id=33, 371.88937pt x 367.3725pt>
 File: ./Figures/Fig_2.1b.png Graphic file (type png)
 <use ./Figures/Fig_2.1b.png>
-Package pdftex.def Info: ./Figures/Fig_2.1b.png  used on input line 144.
-(pdftex.def)             Requested size: 219.09505pt x 176.40965pt.
+Package pdftex.def Info: ./Figures/Fig_2.1b.png  used on input line 146.
+(pdftex.def)             Requested size: 219.09505pt x 170.71992pt.
 
-Overfull \hbox (19.92575pt too wide) in paragraph at lines 144--145
+Overfull \hbox (19.92575pt too wide) in paragraph at lines 146--147
 [][] 
  []
 
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 138--148
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 140--150
 []$[]$ $[]$ 
  []
 
-[6 <./Figures/Fig_2.1a.png> <./Figures/Fig_2.1b.png>] [7]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7 <./Figures/Fig_2.1a.png> <./Figures/Fig_2.1b.png>]
 Chapter 3.
 
-Overfull \hbox (11.20786pt too wide) in paragraph at lines 166--199
+Overfull \hbox (11.20786pt too wide) in paragraph at lines 168--200
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--199
+Underfull \hbox (badness 10000) in paragraph at lines 168--200
 
  []
 
 
-Overfull \hbox (33.99536pt too wide) in paragraph at lines 201--221
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--221
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--221
+Underfull \hbox (badness 10000) in paragraph at lines 168--200
 
  []
 
 [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Overfull \hbox (33.99536pt too wide) in paragraph at lines 204--224
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--224
 
  []
 
 
-Overfull \hbox (14.37723pt too wide) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 204--224
+
+ []
+
+
+Overfull \hbox (14.37723pt too wide) in paragraph at lines 225--226
 []\T1/cmr/m/n/12 The com-par-i-son of mea-sure-ment be-fore ton-sil-lec-tomy wa
 s made with Wilcoxon
  []
@@ -404,75 +400,75 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 232--242
 []$[]$ $[]$ 
  []
 
-[9 <./Figures/Fig_3.1a.png> <./Figures/Fig_3.1b.png>]
-<./Figures/Fig_3.2.png, id=54, 501.072pt x 192.11775pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./Figures/Fig_3.2.png, id=49, 501.072pt x 192.11775pt>
 File: ./Figures/Fig_3.2.png Graphic file (type png)
 <use ./Figures/Fig_3.2.png>
-Package pdftex.def Info: ./Figures/Fig_3.2.png  used on input line 254.
+Package pdftex.def Info: ./Figures/Fig_3.2.png  used on input line 256.
 (pdftex.def)             Requested size: 400.85815pt x 153.6944pt.
 
-Overfull \hbox (2.51956pt too wide) in paragraph at lines 254--255
+Overfull \hbox (2.51956pt too wide) in paragraph at lines 256--257
 [][] 
  []
 
-<./Figures/Fig_3.3.png, id=56, 309.5565pt x 285.4665pt>
+[9]
+<./Figures/Fig_3.3.png, id=54, 309.5565pt x 285.4665pt>
 File: ./Figures/Fig_3.3.png Graphic file (type png)
 <use ./Figures/Fig_3.3.png>
-Package pdftex.def Info: ./Figures/Fig_3.3.png  used on input line 260.
+Package pdftex.def Info: ./Figures/Fig_3.3.png  used on input line 262.
 (pdftex.def)             Requested size: 185.73532pt x 171.2812pt.
 
-Overfull \hbox (6.48418pt too wide) in paragraph at lines 260--261
+Overfull \hbox (6.48418pt too wide) in paragraph at lines 262--263
 [][] 
  []
 
-[10 <./Figures/Fig_3.2.png> <./Figures/Fig_3.3.png>]
-<./Figures/Fig_3.4.png, id=62, 425.33907pt x 358.33875pt>
+[10 <./Figures/Fig_3.1a.png> <./Figures/Fig_3.1b.png> <./Figures/Fig_3.2.png> <
+./Figures/Fig_3.3.png>]
+<./Figures/Fig_3.4.png, id=62, 401.24907pt x 330.48468pt>
 File: ./Figures/Fig_3.4.png Graphic file (type png)
 <use ./Figures/Fig_3.4.png>
-Package pdftex.def Info: ./Figures/Fig_3.4.png  used on input line 272.
-(pdftex.def)             Requested size: 404.06981pt x 340.41988pt.
+Package pdftex.def Info: ./Figures/Fig_3.4.png  used on input line 274.
+(pdftex.def)             Requested size: 401.24808pt x 330.48387pt.
 
-Overfull \hbox (5.73122pt too wide) in paragraph at lines 272--273
+Overfull \hbox (2.90948pt too wide) in paragraph at lines 274--275
 [][] 
  []
 
-[11 <./Figures/Fig_3.4.png>]
+[11 <./Figures/Fig_3.4.png (PNG copy)>] [12]
 Chapter 4.
-[12
+[13
 
-] [13
+] [14
 
-] (mgr_v1.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] (mgr_v1.aux) ) 
 Here is how much of TeX's memory you used:
- 4239 strings out of 492450
- 65026 string characters out of 3120004
- 149799 words of memory out of 3000000
- 8522 multiletter control sequences out of 15000+200000
+ 4241 strings out of 492450
+ 65075 string characters out of 3120004
+ 146773 words of memory out of 3000000
+ 8524 multiletter control sequences out of 15000+200000
  16958 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,7n,46p,851b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecbx1440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecti1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts
-/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Aneta\AppData\Lo
-cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Aneta\
-AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Us
-ers\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.
-pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecbx2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecrm2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
-r/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\font
-s/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Aneta\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
-Output written on mgr_v1.pdf (14 pages, 222969 bytes).
+ 51i,7n,46p,1029b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Aneta\AppData\Local\Mi
+KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Aneta\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\An
+eta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C
+:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1
+440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
+i600\ecrm1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecbx2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\
+fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Aneta\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Aneta\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
+Output written on mgr_v1.pdf (15 pages, 231892 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
+ 512 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
