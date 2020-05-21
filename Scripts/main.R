@@ -3,9 +3,6 @@ library(tidyverse)
 library(dplyr)
 library(moments)
 
-options(warn = -1)
-
-
 # Data loading
 data <- read.csv(file=choose.files(), header=TRUE, sep=";")
 
@@ -39,7 +36,6 @@ data %>%
              TownAbove_50k = sum(!is.na(MiastoPowyzej50tys)))/n*100
 
 summary(data$Wiek) # summary for age
-
 
 data %>% 
   count(KategoriaZawodowa) %>% 
@@ -77,7 +73,9 @@ livingPlace <- data %>%
                    TownAbove_percent = TownAbove_50k/Sum*100)
 
 livingPlace_matrix <- matrix(rbind(c(5,2,22), c(0,1,11)),nrow=2,ncol=3)
-chisq.test(livingPlace_matrix) # p-value = 0.3078
+# H0 : there is no relationship between sex and place of residence in the studied population,
+# H1 : there is a relationship between sex and place of residence in the studied population.
+fisher.test(livingPlace_matrix) # p-value = 0.438
 
 job <- data %>% 
   group_by(Plec) %>% 
@@ -85,7 +83,9 @@ job <- data %>%
   mutate(procent = n/sum(n)*100)
 
 job_matrix <- matrix(rbind(c(filter(job, Plec == "K")$n), c(filter(job, Plec == "M")$n)),nrow=2,ncol=4)
-chisq.test(job_matrix) # p-value = 0.1834
+# H0 : there is no relationship between gender and performed profession in the studied population,
+# H1 : there is a relationship between gender and performed profession in the studied population.
+fisher.test(job_matrix) # p-value = 0.1782
 
 education <- data %>% 
   group_by(Plec) %>% 
@@ -93,7 +93,9 @@ education <- data %>%
   mutate(procent = n/sum(n)*100)
 
 edu_matrix <- matrix(rbind(c(filter(education, Plec == "K")$n), c(filter(education, Plec == "M")$n)),nrow=2,ncol=4)
-chisq.test(edu_matrix) # p-value = 0.2699
+# H0 : there is no relationship between gender and education in the studied population,
+# H1 : there is a relationship between gender and education in the studied population.
+fisher.test(edu_matrix) # p-value = 0.2121
 
 ## No statistically significant difference was observed in terms of analyzed features (p > 0.05).
 
@@ -150,11 +152,11 @@ VSC_before$Grupa[VSC_before$SredniaPomiar1 > 250] = "D"
 # See: Histogram of the distribution of VSC mean concentration in exhaled air in patients before surgery, calculated on the basis of 3 measurements (Ia, Ib, Ic). Based on the average, we assess the severity of halitosis.
 
 
-    # The chi-square test of independence (2x3, 2 degrees of freedom)
+# The Fisher-Freeman-Halton Exact test 
 
 contingency.table <- table(VSC_before$Grupa, VSC_before$Plec)
 observed <- t(matrix(c(9, 19,  1, 5,  5, 2),nrow=3,ncol=2))
-chisq.test(observed) # Pearson's Chi-squared test p-value = 0.2088 
+fisher.test(observed) # p-value = 0.1793
 ## No statistically significant difference was observed in terms of analyzed features (p > 0.05).
 
 
@@ -221,7 +223,7 @@ shapiro.test(VSC_after_f) #  p-value = 0.3131
 shapiro.test(vsc_after_m) # p-value = 0.005966 < 0.05
 ## Samples of VSC measurements for male are not normally distributed --> non-parametric test
 
-wilcox.test(VSC_after_f, vsc_after_m, paired=FALSE) #  p-value = 0.8185 --> no difference between sample means
+wilcox.test(VSC_after_f, vsc_after_m, paired=F, exact=F) #  p-value = 0.8185 --> no difference between sample means
 
 
 

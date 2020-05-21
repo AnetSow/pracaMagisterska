@@ -13,7 +13,7 @@ summary(data_PCA) # 41 individuals, 11 variables
 
 # Calculating PCA
 pca <- PCA(data_PCA, graph = FALSE) # data are standarized by default
-print(pca)
+# print(pca)
 
 eig_values <- pca$eig
 eig_values

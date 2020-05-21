@@ -4,9 +4,11 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[top=2.5cm, bottom=2.5cm, left=3.5cm, right=3.5cm]{geometry}
+\usepackage{float}
 \usepackage{graphicx} 
 \usepackage{subcaption}
 \usepackage{wrapfig}
+
 
 \makeatletter
 
@@ -109,11 +111,16 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod t
 
 \clearpage
 \linespread{1.3}
+%------------------Introduction--------------------
 \chapter{Introduction}
 Tu będzie napisane: \\
 Czym  jest halitoza, przyczyny halitozy (substacje chemiczne, badania mikrobiologiczne, dieta, choroby układu pokarmowego, choroby układu oddechowego, schorzenia ogólnoustrojowe), diagnostyka haliotozy (badania subiektywne i obiektywne), leczenie halitozy, cel badawczy: czy istnieje związek między przewlekłym przerostowym zapaleniem migdałków podniebiennych a halitozą? Czy haliotoza może być predyktorem do przeprowadzenia zabiegu tonsillektomii? Jakie inne objawy mogą wpływać na halitozę?
 
-%---Material and methods ----
+\section{Bootstrap}
+
+\section{Principal Component Analysis}
+
+%------------Material and methods --------------
 \chapter{Material and methods}
 \section{Material}
 
@@ -132,24 +139,26 @@ In order to obtain reliable results, patients could not eat, drink, smoke, chew 
 
 Organoleptic and halimetric examination was repeated for each patient, at least 2-3 months after removal of the palatine tonsils and completion of the healing process.
 
-The value of the average of the three measurements of VSC was used for further statistical analysis. Depending on the chosen criterion of division, two or three groups of patients have been distinguished. First one considered 100 ppb as threshold dividing group into normal (when below) and abnormal (when above the threshold). Second, more detailed criterion included intermediate states as follows: the range up to 100 ppb considered as correct, 100 - 180 ppb as a light form of disease and above 250 ppb as a severe one \cite{Lee04}. However, the study group did not include patients belonging to the latter (Fig. \ref{Fig_2.1}).  
+The value of the average of the three measurements of VSC was used for further statistical analysis. Depending on the chosen criterion of division, two or three groups of patients have been distinguished. First one considered 100 ppb as threshold dividing group into normal (when below) and abnormal (when above the threshold). Second, more detailed criterion included intermediate states as follows: the range up to 100 ppb considered as correct, 100 - 180 ppb as a light form of disease and above 250 ppb as a severe one \cite{Lee04}. However, the study group did not include patients belonging to the latter (Fig. \ref{fig:Fig_2.1}).  
 
 
-\begin{figure}[h]
- 
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=1\linewidth, height=6cm]{./Figures/Fig_2.1a} 
-\caption{the ratio of groups with different forms of the disease}
-\label{Fig_2.1a}
-\end{subfigure}
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=1.1\linewidth, height=6cm]{./Figures/Fig_2.1b}
-\caption{the gender distribution within groups A: < 100 ppb,  B: 100 - 180 ppb, C: > 180 ppb VSC}
-\label{Fig_2.1b}
-\end{subfigure}
- 
-\caption{Groups of patients due to the level of VSC before tonsillectomy.}
-\label{Fig_2.1}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{.5\textwidth}
+	\centering
+		\includegraphics[width=\linewidth, height=6cm]{./Figures/Fig_2.1a} 
+		\caption{the ratio of groups with different \newline forms of the disease}
+		\label{fig:Fig_2.1a}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{.5\textwidth}
+	\centering
+		\includegraphics[width=\linewidth, height=6cm]{./Figures/Fig_2.1b}
+		\caption{the gender distribution within groups A: < 100 ppb,  B: 100 - 180 ppb, C: > 180 ppb VSC}
+		\label{fig:Fig_2.1b}
+	\end{subfigure}
+
+	\caption{Groups of patients due to the level of VSC before tonsillectomy.}
+	\label{fig:Fig_2.1}
 \end{figure}
 
 
@@ -160,130 +169,171 @@ The gender distribution was included in each group. Considered level of signific
 
 
 
-%----------- Results ------------
+%--------------------- Results ---------------------
 \chapter{Results}
-\section{Comparison between groups}
 
-\subsection{General statistics} 
-\noindent
-\begin{tabular}{lcccc}
-\hline Feature 				& Female 	& Male 		& Total 		&  Comparison \\
- 		 					& n = 29 	& n = 12	& n = 41	&  (\textit{p-value}) \\
-\hline
-\bf{Age}					&			&			&			&		\\
-\indent mean				& 26.69		& 27.83		& 27.02		& 		\\
-\indent sd					& 8.49		& 6.32		& 7.86		& 0.6391 \\
-\indent me					& 24.00		& 27		& 25.00		& 		\\
-\indent spread				& 18.00-56.00 & 19.00-36.00	& 18.00-56.00 & \\
-\hline
+Forty-one patients were studied, ranging in age from 18 to 56 years. The halitometry cut-off value divided patients into four groups: Group A - normal halitometry (below 100 ppb), Group B - light form of halitometry (100 - 180 ppb), Group C - abnormal halitometry (180 - 250 ppb) and Group D - severe form of halitometry (above 250 ppb). None of the patients had symptoms that included him in the last one, therefore Group D is not presented in the results. The first section summarizes the distribution of age, living place, education, profession and halitometry results for original trial. All presented results of statistical inference also take into account split on gender.
 
-\bf{Living place} 			&			&			&			&		\\
-\indent village				& 5 (17.24)	& 0 (0.00)	& 5	(12.20)	& 		\\
-\indent town					& 2 (6.90)	& 1	(8.33) 	& 3	(17.85) 	&  0.3078 \\
-\indent city					& 22 (75.86)	& 11 (91.67) & 33 (80.49) & 		\\
-\hline
+In order to check the proposed division of the research sample into groups, Principal Component Analysis was used, the results of which are in the second section.
 
-\bf{Profession} 				&			&			&			&		\\
-\indent school-age student	& 2 (6.90)	& 2 (16.67)	& 4	(9.76) 	& 		\\
-\indent student				& 6 (20.69)	& 1	(8.33) 	& 7	(17.10) 	& 0.1834 \\
-\indent blue-collar worker		& 3 (10.35)	& 4 (33.33) 	& 7 (17.10) 	& 		\\
-\indent white-collar worker	& 18 (62.07)	& 5 (41.67) 	& 23 (56.10) & 		\\
-\hline
+Due to the relatively small research sample's size, the same statistical inference was carried out using the bootstrap method.
 
-\bf{Education} 				&			&			&			&		\\
-\indent elementary			& 1 (3.45)	& 2 (16.70)	& 3	(7.32) 	& 		\\
-\indent secondary			& 13 (44.80)	& 5	(41.70) 	& 18 (43.90) & 0.2699 \\
-\indent higher				& 15 (51.70)	& 5 (41.70) 	& 20 (48.80) & 		\\
-\hline
+%---Original data statistical inference---
+\section{Original data}
 
-\end{tabular} \\ \\
+%---General statistics---
+Table \ref{tab:General_stats} summarizes the comparison of features: age, living place, profession and education between men and women in the original data. Student's t test (\textit{stats::t.test}) was used to test the significance of differences in means of age after checking the assumption of normality and homogeneity of variance. 
+Categorical data - living place, profession, education - were tested with $\chi^2 $ test of independence. 
+No statistically significant difference was observed in terms of analyzed features (p > 0.05). 
 
-The comparison of features: Age, Living place, Profession and Education between men and women was made with Student's t test (\textit{stats::t.test}) after checking the assumption of normality and homogeneity of variance. No statistically significant difference was observed in terms of analyzed features (p > 0.05).
+\begin{table}[H]
+\centering
+	\begin{tabular}{lcccc}
+	\hline Feature 				& Female 	& Male 		& Total 		&  Comparison \\
+	 		 					& n = 29 	& n = 12	& n = 41	&  (\textit{p-value}) \\
+	\hline
+	\bf{Age}						&			&			&			&		\\
+	\indent mean					& 26.69		& 27.83		& 27.02		& 		\\
+	\indent sd					& 8.49		& 6.32		& 7.86		& 0.6391 \\
+	\indent me					& 24.00		& 27.00		& 25.00		& 		\\
+	\indent spread				& 18.00-56.00 & 19.00-36.00	& 18.00-56.00 & \\
+	\hline
+	
+	\bf{Living place} 				&			&			&			&		\\
+	\indent village				& 5 (17.24)	& 0 (0.00)	& 5	(12.20)	& 		\\
+	\indent town					& 2 (6.90)	& 1	(8.33) 	& 3	(17.85) 	&  0.3078 \\
+	\indent city					& 22 (75.86)	& 11 (91.67) & 33 (80.49) & 		\\
+	\hline
+	
+	\bf{Profession} 				&			&			&			&		\\
+	\indent school-age student		& 2 (6.90)	& 2 (16.67)	& 4	(9.76) 	& 		\\
+	\indent student				& 6 (20.69)	& 1	(8.33) 	& 7	(17.10) 	& 0.1834 \\
+	\indent blue-collar worker		& 3 (10.35)	& 4 (33.33) 	& 7 (17.10) 	& 		\\
+	\indent white-collar worker	& 18 (62.07)	& 5 (41.67) 	& 23 (56.10) & 		\\
+	\hline
+	
+	\bf{Education} 				&			&			&			&		\\
+	\indent elementary			& 1 (3.45)	& 2 (16.70)	& 3	(7.32) 	& 		\\
+	\indent secondary			& 13 (44.80)	& 5	(41.70) 	& 18 (43.90) & 0.2699 \\
+	\indent higher				& 15 (51.70)	& 5 (41.70) 	& 20 (48.80) & 		\\
+	\hline
+	
+	\end{tabular} \\ 
+	\caption{General statistics.}
+	\label{tab:General_stats}
+\end{table}
 
-\subsection{Halitometry results}
-\noindent
-\begin{tabular}{lcccc}
-\hline VSC [ppb] 				& Female 	& Male 		& Total 		&  Comparison  \\
- 		 					& n = 29 	& n = 12	& n = 41	&  (\textit{p-value}) \\
-\hline
-\bf{Before tonsillectomy}		&			&			&			&		\\
-\indent mean				& 115.03	& 107.92	& 113.00	& 		\\
-\indent sd					& 37.89		& 67.81		& 47.76		& 0.5378 \\
-\indent me					& 120.00	& 105.00	& 117.00	& 		\\
-\indent spread				& 22.00-186.00 & 25.00-238.00 & 22.00-238.00	 & \\
-\hline
+%---Halitometry---
+The comparison of VSC measurements between men and women either before and after tonsillectomy was made with Wilcoxon test (\textit{stats::wilcox.test}) due to heterogeneity of variance between groups. According to \textit{p-values} 0.5378 and 0.8185,  we do have a basis to accept the null hypothesis that the means in both groups are equal for both women and men (Tab. \ref{tab:Halitometry_results}). 
 
-\bf{After tonsillectomy}		&			&			&			&		\\
-\indent mean				& 43.52		& 45.08		& 43.98		& 		\\
-\indent sd					& 19.20		& 24.81		& 20.66		& 0.8185 \\
-\indent me					& 50.00		& 36.00		& 40.00 		& 		\\
-\indent spread				& 7.00-80.00 & 23.00-113.00	& 7.00-113.00 & \\
-\hline
+The comparison of VSC measurements before and after tonsillectomy (whole sample) was made with Welch Two Sample t-test (\textit{stats::t.test} with paired = FALSE argument). According to \textit{p-value} = 0.8471 we do have basis to accept the null hypothesis that the means in both groups are equal, thus the distributions of those variables do not differ. 
 
-\end{tabular} \\ \\
-
-The comparison of measurement before tonsillectomy was made with Wilcoxon test (\textit{stats::wilcox.test}) due to heterogeneity of variance between groups (female vs male, \textit{p-value} = 0.01564). 
-
-The comparison of VSC before and after tonsillectomy was made with Welch Two Sample t-test (\textit{stats::t.test} with paired=FALSE argument). According to p-value = 0.8471 we do have basis to accept the null hypothesis that the means in both groups are equal. 
-
-
-\begin{figure}[h]
- 
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=1\linewidth, height=6cm]{./Figures/Fig_3.1a} 
-\caption{before tonsillectomy}
-\label{Fig_3.1a}
-\end{subfigure}
-\begin{subfigure}{0.5\textwidth}
-\includegraphics[width=1\linewidth, height=6cm]{./Figures/Fig_3.1b}
-\caption{after tonsillectomy}
-\label{Fig_3.1b}
-\end{subfigure}
- 
-\caption{Levels of VSC in groups with split on gender. Groups A: < 100 ppb,  B: 100 - 180 ppb, C: > 180 ppb VSC}
-\label{Fig_3.1}
-\end{figure}
+\begin{table}[H]
+\centering
+	\begin{tabular}{lcccc}
+	\hline VSC [ppb] 				& Female 	& Male 		& Total 		&  Comparison  \\
+	 		 					& n = 29 	& n = 12	& n = 41	&  (\textit{p-value}) \\
+	\hline
+	\bf{Before tonsillectomy}		&			&			&			&		\\
+	\indent mean					& 115.03	& 107.92	& 113.00	& 		\\
+	\indent sd					& 37.89		& 67.81		& 47.76		& 0.5378 \\
+	\indent me					& 120.00	& 105.00	& 117.00	& 		\\
+	\indent spread				& 22.00-186.00 & 25.00-238.00 & 22.00-238.00	 & \\
+	\hline
+	
+	\bf{After tonsillectomy}		&			&			&			&		\\
+	\indent mean					& 43.52		& 45.08		& 43.98		& 		\\
+	\indent sd					& 19.20		& 24.81		& 20.66		& 0.8185 \\
+	\indent me					& 50.00		& 36.00		& 40.00 		& 		\\
+	\indent spread				& 7.00-80.00 & 23.00-113.00	& 7.00-113.00 & \\
+	\hline
+	
+	\end{tabular} \\ 
+	\caption{Halitometry results.}
+	\label{tab:Halitometry_results}
+\end{table}
 
 After tonsillectomy, there was only one patient with light form of halitosis - a 29-year old man with 113 ppb of VSC.
-The avarage level of VSC dropped by 106.51 ppb.
+The avarage level of VSC dropped by 106.51 ppb after sugery (Fig. \ref{fig:Fig_3.1}).
 
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{./Figures/Fig_3.1a} 
+		\caption{before tonsillectomy}
+		\label{fig:Fig_3.1a}
+	\end{subfigure} 
+	\begin{subfigure}[b]{0.49\textwidth}
+		\includegraphics[width=\textwidth]{./Figures/Fig_3.1b}
+		\caption{after tonsillectomy}
+		\label{fig:Fig_3.1b}
+	\end{subfigure}
+	 
+	\caption{Levels of VSC in groups with split on gender. Groups A: < 100 ppb,  B: 100 - 180 ppb, C: > 180 ppb VSC}
+	\label{fig:Fig_3.1}
+\end{figure}
+
+
+
+%---PCA---
+\newpage
 \section{PCA results}
-
 
 In order to determine the minimum number of principal components (PCs) that account for most of the variation in analyzed data two methods were used. The first one was based on the proportion of variance that the components explain. The acceptance level of variance was set to 80\%, thus PC3 might be taken as the cut-off point.
 
-\begin{figure}[h]
-	\includegraphics[scale=0.80]{./Figures/Fig_3.2}
-	\caption{Eigenvalues.}
-	\label{Fig_3.2}
-\end{figure}	
+An alternative method of estimating the number of principal components is the scree plot (Fig. \ref{fig:Fig_3.2}) , which orders the eigenvalues in descending order. The number of PCs is selected at the point where there is a relative decrease in the amount of variance explained by given component. In that case, both methods indicate the same cut-off point which is PC3 meaning that first three principal components explain 82.61\% of the variation in the data.
 
-\begin{wrapfigure}{l}{0.45\textwidth}
-	\includegraphics[scale=0.6]{./Figures/Fig_3.3}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{./Figures/Fig_3.2}
 	\caption{Scree plot.}
-	\label{Fig_3.3}
-\end{wrapfigure}	
-
-An alternative method of estimating the number of principal components is the scree plot, which orders the eigenvalues in descending order. The number of PCs is selected at the point where there is a relative decrease in the amount of variance explained by given component. In that case, both methods indicate the same cut-off point which is PC3 meaning that first three principal components explain 82.61\% of the variation in the data.
+	\label{fig:Fig_3.2}
+\end{figure}	
 
 Examining the magnitude and direction of the coefficients for the original variables allows to interpret each principal component. In these results, first and second principal component has positive associations with the average measurements of VSC (before and after tonsillectomy), so this component primarily measures surgery effectiveness. The second component has positive associations with individual measurements of VSC, so this component primarily measures repeatability of results. The third component has large positive associations with height and weight, so this component primarily measures the patient's body mass index. 
 
-A PCA biplot (Fig. \ref{Fig_3.4}) shows both principal component scores of samples (here already grouped into three) and loadings of variables (so called loading plot). The further away vectors (variables) are from the origin, the more influence they have on that principal component.  From loading plots we can notice how well are the variables correlated with each other: a small angle implies positive correlation, a large one suggests negative correlation. A right angle indicates no correlation between two features.
+\begin{table}[H]
+\centering
+	\begin{tabular}{lrrr}
+	\hline PC	&	eigenvalue	&	pct of variance	&	cumulative pct of variance  \\
+	\hline
+	comp 1		&	5.3278		&	48.434			&	48.4342\\
+	comp 2		&	2.0581		&	18.7102			&	67.1444\\
+	comp 3		&	1.7014		&	15.4671			&	82.6115\\
+	\hline
+	comp 4		&	0.9906		&	9.0054			&	91.6170\\
+	comp 5		&	0.3051		&	2.7735			&	94.3905\\
+	comp 6		&	0.2083		&	1.8938			&	96.2843\\
+	comp 7		&	0.1968		&	1.7896			&	98.0738\\
+	comp 8		&	0.0944		&	0.8585			&	98.9323\\
+	comp 9		&	0.0705		&	0.6406			&	99.5729\\
+	comp 10		&	0.0467		&	0.4245			&	99.9974\\
+	comp 11		&	0.0003		&	0.0026			&	100.0000\\
+	\hline
+	\end{tabular} \\ 
+	\caption{Eigenvalues.}
+	\label{tab:Eigenvalues}
+\end{table}
 
-\begin{figure}[h]
-	\includegraphics{./Figures/Fig_3.4}
+
+A PCA biplot (Fig. \ref{fig:Fig_3.3}) shows both principal component scores of samples (here already grouped into three) and loadings of variables (so called loading plot). The further away vectors (variables) are from the origin, the more influence they have on that principal component.  From loading plots we can notice how well are the variables correlated with each other: a small angle implies positive correlation, a large one suggests negative correlation. A right angle indicates no correlation between two features.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.75]{./Figures/Fig_3.3}
 	\caption{Biplot.}
-	\label{Fig_3.4}
+	\label{fig:Fig_3.3}
 \end{figure}	
 
 
+%--- Bootstrap ---
+\section{Bootstrap}
+- non-parametric bootstrap 
 
 
-\section{Additional factors}
-Impact of air pollution, diet etc.
 
-
-%----------- Discussion ------------
+%--------------- Discussion ----------------
 \chapter{Discussion}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diamvoluptua. 
 
@@ -291,6 +341,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyeirmod t
 %--------------- Bibliografia ---------------
 
 \begin{thebibliography}{9}
+\bibliographystyle{plain}
 \bibitem{Rosenberg92} Rosenberg M, McCulloch CAG (1992) \emph{Measurement of Oral Malodor: Current Methods and Future Prospects}, Journal of Periodontology, 63, 776–782.
 \bibitem{Alasqah16} Alasqah M, Khan S, Elqomsan MA, Gufran K, Kola Z, Bin Hamza MO (2016) \emph{Assessment of halitosis using the organoleptic method and volatile sulfur compounds monitoring}, Journal of Dental Research and Review 3: 3, 94-98.
 \bibitem{Lee04} Lee PP, Mak WY, Newsome P (2004) \emph{The aetiology and treatment of oral halitosis: an update}, Hong Kong Medical Journal  10, 414–418.
