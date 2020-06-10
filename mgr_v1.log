@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.23)  15 MAY 2020 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.23)  26 MAY 2020 14:59
 entering extended mode
 **./mgr_v1.tex
 (mgr_v1.tex
@@ -118,6 +118,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks19
 \@floatcapt=\box28
 )
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen116
+\ar@mcellbox=\box29
+\extrarowheight=\dimen117
+\NC@list=\toks20
+\extratabsurround=\skip43
+\backup@length=\skip44
+\ar@cellbox=\box30
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.
+sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip45
+\multirow@cntb=\count95
+\multirow@dima=\skip46
+\bigstrutjot=\dimen118
+)
 ("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -139,8 +157,8 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen116
-\Gin@req@width=\dimen117
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
 )
 ("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
 .sty"
@@ -154,45 +172,69 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 ty"
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen118
-\captionmargin@=\dimen119
-\captionwidth=\dimen120
-\caption@tempdima=\dimen121
-\caption@indent=\dimen122
-\caption@parindent=\dimen123
-\caption@hangindent=\dimen124
+\captionmargin=\dimen121
+\captionmargin@=\dimen122
+\captionwidth=\dimen123
+\caption@tempdima=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count95
-\c@continuedfloat=\count96
+\c@caption@flags=\count96
+\c@continuedfloat=\count97
 Package caption Info: float package is loaded.
 )
-\c@subfigure=\count97
-\c@subtable=\count98
+\c@subfigure=\count98
+\c@subtable=\count99
 )
 ("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.st
 y"
-\wrapoverhang=\dimen125
-\WF@size=\dimen126
-\c@WF@wrappedlines=\count99
-\WF@box=\box29
-\WF@everypar=\toks20
+\wrapoverhang=\dimen128
+\WF@size=\dimen129
+\c@WF@wrappedlines=\count100
+\WF@box=\box31
+\WF@everypar=\toks21
 Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arydshln\arydshln.
+sty"
+Package: arydshln 2019/02/21 v1.76 
+\dashlinedash=\dimen130
+\dashlinegap=\dimen131
+\adl@box=\box32
+\adl@height=\dimen132
+\adl@heightsave=\dimen133
+\adl@depth=\dimen134
+\adl@depthsave=\dimen135
+\adl@finaldepth=\dimen136
+\adl@columns=\count101
+\adl@ncol=\count102
+\adl@currentcolumn=\count103
+\adl@currentcolumnsave=\count104
+\adl@totalheight=\count105
+\adl@totalheightsave=\count106
+\adl@dash=\count107
+\adl@gap=\count108
+\adl@cla=\count109
+\adl@clb=\count110
+\adl@everyvbox=\toks22
+\adl@LTpagetotal=\dimen137
 ) (mgr_v1.aux)
 \openout1 = `mgr_v1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -232,17 +274,17 @@ LaTeX Font Info:    ... okay on input line 59.
 ("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen127
-\scratchbox=\box30
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen128
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count111
+\scratchdimen=\dimen138
+\scratchbox=\box33
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen139
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks24
 )
 ("C:\Users\Aneta\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
 base.sty"
@@ -302,7 +344,7 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {C:/Users/Aneta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
@@ -326,94 +368,104 @@ Chapter 1.
 [4
 
 
-]
+] [5]
 Chapter 2.
-[5
+[6
 
 ]
-<./Figures/Fig_2.1a.png, id=32, 481.8pt x 481.8pt>
+<./Figures/Fig_2.1a.png, id=36, 481.8pt x 481.8pt>
 File: ./Figures/Fig_2.1a.png Graphic file (type png)
 <use ./Figures/Fig_2.1a.png>
-Package pdftex.def Info: ./Figures/Fig_2.1a.png  used on input line 149.
+Package pdftex.def Info: ./Figures/Fig_2.1a.png  used on input line 173.
 (pdftex.def)             Requested size: 199.16399pt x 170.71304pt.
-<./Figures/Fig_2.1b.png, id=33, 371.88937pt x 367.3725pt>
+<./Figures/Fig_2.1b.png, id=37, 371.88937pt x 367.3725pt>
 File: ./Figures/Fig_2.1b.png Graphic file (type png)
 <use ./Figures/Fig_2.1b.png>
-Package pdftex.def Info: ./Figures/Fig_2.1b.png  used on input line 155.
+Package pdftex.def Info: ./Figures/Fig_2.1b.png  used on input line 179.
 (pdftex.def)             Requested size: 199.17163pt x 170.71992pt.
- [6] [7 <./Figures/Fig_2.1a.png> <./Figures/Fig_2.1b.png>]
+ [7] [8 <./Figures/Fig_2.1a.png> <./Figures/Fig_2.1b.png>]
 Chapter 3.
-[8
 
-]
-Overfull \hbox (2.62889pt too wide) in paragraph at lines 229--230
-[]\T1/cmr/m/n/12 The com-par-i-son of VSC mea-sure-ments be-fore and af-ter ton
--sil-lec-tomy (whole
- []
-
-
-Overfull \hbox (33.99536pt too wide) in paragraph at lines 233--251
+Overfull \hbox (2.80574pt too wide) in paragraph at lines 216--247
  [][] 
  []
 
-[9]
-<./Figures/Fig_3.1a.png, id=51, 371.88937pt x 367.3725pt>
-File: ./Figures/Fig_3.1a.png Graphic file (type png)
-<use ./Figures/Fig_3.1a.png>
-Package pdftex.def Info: ./Figures/Fig_3.1a.png  used on input line 263.
-(pdftex.def)             Requested size: 195.1881pt x 192.82298pt.
-<./Figures/Fig_3.1b.png, id=52, 348.55219pt x 352.31625pt>
+[9
+
+] [10]
+<./Figures/Fig_3.1aK.png, id=54, 238.491pt x 293.898pt>
+File: ./Figures/Fig_3.1aK.png Graphic file (type png)
+<use ./Figures/Fig_3.1aK.png>
+Package pdftex.def Info: ./Figures/Fig_3.1aK.png  used on input line 291.
+(pdftex.def)             Requested size: 179.25114pt x 220.8983pt.
+<./Figures/Fig_3.1b.png, id=56, 334.24875pt x 352.31625pt>
 File: ./Figures/Fig_3.1b.png Graphic file (type png)
 <use ./Figures/Fig_3.1b.png>
-Package pdftex.def Info: ./Figures/Fig_3.1b.png  used on input line 268.
-(pdftex.def)             Requested size: 195.1881pt x 197.29575pt.
- [10 <./Figures/Fig_3.1a.png> <./Figures/Fig_3.1b.png>]
-<./Figures/Fig_3.2.png, id=58, 309.5565pt x 285.4665pt>
+Package pdftex.def Info: ./Figures/Fig_3.1b.png  used on input line 296.
+(pdftex.def)             Requested size: 211.11896pt x 222.53563pt.
+ [11 <./Figures/Fig_3.1aK.png> <./Figures/Fig_3.1b.png>]
+<./Figures/Fig_3.2.png, id=62, 309.5565pt x 285.4665pt>
 File: ./Figures/Fig_3.2.png Graphic file (type png)
 <use ./Figures/Fig_3.2.png>
-Package pdftex.def Info: ./Figures/Fig_3.2.png  used on input line 289.
-(pdftex.def)             Requested size: 232.1668pt x 214.09933pt.
- [11 <./Figures/Fig_3.2.png>]
-<./Figures/Fig_3.3.png, id=64, 401.24907pt x 330.48468pt>
+Package pdftex.def Info: ./Figures/Fig_3.2.png  used on input line 343.
+(pdftex.def)             Requested size: 309.55574pt x 285.46579pt.
+ [12]
+<./Figures/Fig_3.3.png, id=67, 401.24907pt x 330.48468pt>
 File: ./Figures/Fig_3.3.png Graphic file (type png)
 <use ./Figures/Fig_3.3.png>
-Package pdftex.def Info: ./Figures/Fig_3.3.png  used on input line 324.
-(pdftex.def)             Requested size: 300.93605pt x 247.8629pt.
- [12 <./Figures/Fig_3.3.png (PNG copy)>] [13]
+Package pdftex.def Info: ./Figures/Fig_3.3.png  used on input line 355.
+(pdftex.def)             Requested size: 401.24808pt x 330.48387pt.
+
+Overfull \hbox (2.90948pt too wide) in paragraph at lines 355--356
+ [][] 
+ []
+
+[13 <./Figures/Fig_3.2.png>]
+Overfull \hbox (2.80579pt too wide) in paragraph at lines 372--403
+ [][] 
+ []
+
+[14 <./Figures/Fig_3.3.png (PNG copy)>] [15] [16] [17]
 Chapter 4.
-[14
+<./Figures/RSES_correlation.png, id=84, 358.33875pt x 252.945pt>
+File: ./Figures/RSES_correlation.png Graphic file (type png)
+<use ./Figures/RSES_correlation.png>
+Package pdftex.def Info: ./Figures/RSES_correlation.png  used on input line 488
+.
+(pdftex.def)             Requested size: 278.83578pt x 196.837pt.
+[18
 
-] [15
+ <./Figures/RSES_correlation.png>] [19] [20] [21
 
-] (mgr_v1.aux) ) 
+] [22] (mgr_v1.aux) ) 
 Here is how much of TeX's memory you used:
- 4282 strings out of 492450
- 65695 string characters out of 3120004
- 152085 words of memory out of 3000000
- 8563 multiletter control sequences out of 15000+200000
+ 4618 strings out of 492450
+ 70620 string characters out of 3120004
+ 155383 words of memory out of 3000000
+ 8886 multiletter control sequences out of 15000+200000
  16958 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,7n,46p,1029b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecti1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Aneta\AppData\Local\Mi
-KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Aneta\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\An
-eta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C
-:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
-200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecbx2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkna
-ppen/ec/dpi600\ecrm2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\
-fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Aneta\AppData\Local\M
-iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/Aneta/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users
-/Aneta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b>
-Output written on mgr_v1.pdf (16 pages, 222115 bytes).
+ 51i,8n,46p,1029b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\
+2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Aneta\AppData\Loc
+al\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Aneta\A
+ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Use
+rs\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.p
+k> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecrm1200.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecbx2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Aneta\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Aneta\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Aneta\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/Aneta/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Users/Aneta/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r8.pfb>
+Output written on mgr_v1.pdf (23 pages, 253585 bytes).
 PDF statistics:
- 498 PDF objects out of 1000 (max. 8388607)
+ 542 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

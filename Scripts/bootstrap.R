@@ -94,17 +94,21 @@ bootForContinuous <- function(my.sample, B = 1000){
     colnames(boot.results) <- c("mean", "median", "sd", "min", "max")
     rownames(boot.results) <- c("T1", "se", "bias", "leftCI", "rightCI")
     
-    require(ggplot2)
-    if ( is.null(binwidth) )
-        binwidth = diff(range(boot.statistics))/30
-    p = ggplot(data.frame(x=boot.statistics),aes(x=x)) +
-        geom_histogram(aes(y=..density..),binwidth=binwidth) + 
-        geom_density(color="red")
-    
-    plot(p)
+    # binwidth=0
+    # require(ggplot2)
+    # if ( is.null(binwidth) )
+    #     binwidth = diff(range(boot.mean))/30
+    # p = ggplot(data.frame(x=boot.mean),aes(x=x)) +
+    #     geom_histogram(aes(y=..density..),binwidth=binwidth) +
+    #     geom_density(color="red")
+    # 
+    # plot(p)
     
     return(boot.results)
 }
+
+# H0: the patients are equally distributed across Education, Profession and Living place.
+# H1: the patients are not equally distributed across Education, Profession and Living place.
 
 # Age
 bootForContinuous(data$Wiek)
@@ -134,6 +138,9 @@ bootForCategorical <- function(my.sample, B = 1000){
     return(list( counts = counts, stat = stat, pval = pval))
 }
 
+# H0: the patients are equally distributed across Education, Profession and Living place.
+# H1: the patients are not equally distributed across Education, Profession and Living place.
+
 # Education
 # 1 - elementary, 2 - secondary, 3 - higher education
 bootForCategorical(data$Wyksztalcenie) # p-value 4.98676e-68
@@ -147,7 +154,7 @@ bootForCategorical(data$KategoriaZawodowa) # p-value 4.070697e-107
 # 1 - city, 2 - town, 3 - village
 bootForCategorical(data$livingPlace) # p-value 1.097715e-226
 
-
+# We can reject the null hypothesis that the patients are equally distributed across Education, Profession and Living place.
 
 
 
@@ -186,8 +193,9 @@ boot2groups <- function(data, feature, B = 100){
 bootForContinuous(female.orig$Wiek)
 bootForContinuous(male.orig$Wiek)
 boot2groups(data, data$Wiek)  # p-value 5.39013e-28
+# As the p-value turns out to be 5.39013e-28, and is less than the .05 significance level, we reject the null hypothesis that the age of female and male are identical populations.
 
-# Halitomerty - before and after tonsillectomy
+# Halitometry - before and after tonsillectomy
 bootForContinuous(female.orig$SredniaPomiar1)
 bootForContinuous(male.orig$SredniaPomiar1)
 boot2groups(data, data$SredniaPomiar1) # p-value 3.883904e-11
@@ -195,8 +203,7 @@ boot2groups(data, data$SredniaPomiar1) # p-value 3.883904e-11
 bootForContinuous(female.orig$SredniaPomiar2)
 bootForContinuous(male.orig$SredniaPomiar2)
 boot2groups(data, data$SredniaPomiar2) # p-value 0.002480751
-
-
+# At .05 significance level, we conclude that the measuremenths of VSC levels of female and male, either before and after tonsillectomy, are nonidentical populations. 
 
 # BOOTSTRAP FOR CATEGORICAL DATA (livingPlace, Education, Profession)
 
@@ -214,4 +221,84 @@ bootForCategorical(male.orig$KategoriaZawodowa) # p-value 1.0444e-61
 # 1 - village, 2 - city, 3 - town
 bootForCategorical(female.orig$livingPlace) # p-value 1.077331e-182
 bootForCategorical(male.orig$livingPlace) # p-value 9.721487e-155
+
+# We can reject the null hypothesis that the patients are equally distributed across Education, Profession and Living place.
+
+
+
+# Comparing VSC before and after
+
+vsc_data <- rbind(cbind(data$SredniaPomiar1, rep(1,length(data$SredniaPomiar1))), cbind(data$SredniaPomiar2, rep(2,length(data$SredniaPomiar2)))) 
+colnames(vsc_data) <- c("VSC", "nr")
+vsc_data <- as.data.frame(vsc_data)
+vsc_data
+
+n = with(vsc_data, by(VSC, nr, length)); n
+
+B = 1000
+before.samples = with(vsc_data, matrix(sample(VSC[nr == 1], size = n[1]*B, replace = TRUE), B, n[1]))
+after.samples = with(vsc_data, matrix(sample(VSC[nr == 2], size = n[2]*B, replace = TRUE), B, n[2]))
+
+before.means = apply(before.samples, 1, mean)
+after.means = apply(after.samples, 1, mean)
+
+s1 <- shapiro.test(before.means)$p.value
+s2 <- shapiro.test(after.means)$p.value
+var <- var.test(before.means, after.means)
+
+if( s1 < 0.05 || s2 < 0.05 || var < 0.05) {
+    t <- wilcox.test(before.means, after.means, paired = TRUE)
+    pval <- t$p.value
+}else{
+    t <- t.test(before.means, after.means, paired = FALSE)
+    pval <- t$p.value
+}
+
+boot.stat = after.means - before.means
+
+
+# OR
+# http://biostat.mc.vanderbilt.edu/wiki/pub/Main/JenniferThompson/ms_mtg_18oct07.pdf
+
+
+library(Hmisc)
+
+bootdif <- function(y, g) {
+    ## Ensure treatment group is a factor
+    g <- as.factor(g)
+    
+    ## Use the smean.cl.boot function to bootstrap means for variable y for each treatment group (A and B)
+    a <- attr(smean.cl.boot(y[g==levels(g)[1]],B=1000, reps=TRUE),'reps')
+    b <- attr(smean.cl.boot(y[g==levels(g)[2]],B=1000, reps=TRUE),'reps')
+    
+    ## Calculate the observed mean difference between groups
+    meandif <- diff(tapply(y, g, mean, na.rm=TRUE))
+    ## Calculate the 2.5 and 97.5 percentiles of the differences in bootstrapped means (can easily be changed for 90% CI, 99% CI, etc.)
+    a.b <- quantile(b-a, c(.025,.975))
+    ## Prepare object to return
+    res <- c(meandif, a.b)
+    names(res) <- c('Mean','.025','.975')
+    # res
+    return(list(a=a,b=b,res=res))
+    }
+bootdif(vsc_data$VSC, g=vsc_data$nr)
+
+
+
+
+
+bef <- bootdif(vsc_data$VSC, g=vsc_data$nr)$a
+aft <- bootdif(vsc_data$VSC, g=vsc_data$nr)$b
+
+d = data.frame(x = c(bef,aft), Group=rep(c("after \ntonsillectomy","before \ntonsillectomy"), c(length(bef), length(aft))))
+
+ggplot(d) + 
+    geom_histogram(aes(x=x, fill=Group), colour="black", binwidth = 3) +
+    scale_x_continuous(name = "VSC levels in bootstrap populations [ppb]", n.breaks = 10) +
+    scale_y_continuous(name = "Count", n.breaks = 15) + 
+    theme_classic()
+
+figure_saving("3.4.2")
+
+# "#d73027", "#91cf60"
 

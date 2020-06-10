@@ -36,6 +36,14 @@ data %>%
              TownAbove_50k = sum(!is.na(MiastoPowyzej50tys)))/n*100
 
 summary(data$Wiek) # summary for age
+# binwidth=0
+# require(ggplot2)
+# if ( is.null(binwidth) )
+#   binwidth = diff(range(data$Wiek))/30
+# p = ggplot(data.frame(x=data$Wiek),aes(x=x)) +
+#   geom_histogram(aes(y=..density..),binwidth=binwidth) +
+#   geom_density(color="red")
+# plot(p)
 
 data %>% 
   count(KategoriaZawodowa) %>% 
@@ -109,6 +117,14 @@ fisher.test(edu_matrix) # p-value = 0.2121
 
 VSC_before <- select(data, Plec, Wiek, SredniaPomiar1)
 summary(VSC_before)
+# binwidth=0
+# require(ggplot2)
+# if ( is.null(binwidth) )
+#   binwidth = diff(range(VSC_before$SredniaPomiar1))/30
+# p = ggplot(data.frame(x=VSC_before$SredniaPomiar1),aes(x=x)) +
+#   geom_histogram(aes(y=..density..),binwidth=binwidth) +
+#   geom_density(color="red")
+# plot(p)
 
     # 2.1.1 STATISTIC TESTS WITH SPLIT ON GENDER
 
@@ -212,7 +228,14 @@ avgVSC_C/avgVSC_B*100
 VSC_after <- select(data, Plec, Wiek, SredniaPomiar2)
 summary(VSC_after)
 
-
+binwidth=0
+require(ggplot2)
+if ( is.null(binwidth) )
+  binwidth = diff(range(VSC_after$SredniaPomiar2))/30
+p = ggplot(data.frame(x=VSC_after$SredniaPomiar2),aes(x=x)) +
+  geom_histogram(aes(y=..density..),binwidth=binwidth) +
+  geom_density(color="red")
+# plot(p)
 
     # 2.2.1 STATISTIC TESTS WITH SPLIT ON GENDER
 
@@ -268,7 +291,7 @@ shapiro.test(data$SredniaPomiar1) # p-value = 0.5822
 shapiro.test(data$SredniaPomiar2) # p-value = 0.04493
 # The average VSC measurements taken before surgery have a normal distribution, and after the operation deviate from it.
 
-hist(data$SredniaPomiar2)
+# hist(data$SredniaPomiar2)
 skewness(data$SredniaPomiar2) # 0.7873434, right-skewed distribution --> Box-Cox transformation
 skewness(sqrt(data$SredniaPomiar2)) # 0.01777133
 shapiro.test(sqrt(data$SredniaPomiar2)) # p-value = 0.5834 --> ok
@@ -278,11 +301,51 @@ data$SredniaPomiar2norm <- sqrt(data$SredniaPomiar2)
 t.test(data$SredniaPomiar1, data$SredniaPomiar2norm, paired=T) # p-value < 2.2e-16
 # We have basis for rejecting the null hypothesis that the means of two samples of dependent distributions do not differ from each other. The difference is 106.5 ppb.
 
+# ---------------------------------------------------------------------------------------------- #
+# 3. CORRELATIONS: age, living place, profession, education
+# ---------------------------------------------------------------------------------------------- #
 
+library(PerformanceAnalytics)
+
+# Living place encoding
+livingPlace <- numeric(nrow(data))
+livingPlace[data[,'Wies'] == TRUE] <- 1
+livingPlace[data[,'MiastoPowyzej50tys'] == TRUE] <- 2
+livingPlace[data[,'MiastoPonizej50tys'] == TRUE] <- 3
+# data <- cbind(data, livingPlace)
+
+profession <- numeric(nrow(data))
+profession[data[,'KategoriaZawodowa'] == "U"] <- 1
+profession[data[,'KategoriaZawodowa'] == "S"] <- 2
+profession[data[,'KategoriaZawodowa'] == "PU"] <- 3
+profession[data[,'KategoriaZawodowa'] == "PF"] <- 4
+# data <- cbind(data, profession)
+
+education <- numeric(nrow(data))
+education[data[,'Wyksztalcenie'] == "podstawowe"] <- 1
+education[data[,'Wyksztalcenie'] == "średnie"] <- 2
+education[data[,'Wyksztalcenie'] == "wyższe"] <- 3
+# data <- cbind(data, education)
+
+sex <- numeric(nrow(data))
+sex[data[,'Plec'] == "K"] <- 0
+sex[data[,'Plec'] == "M"] <- 1
+# data <- cbind(data, sex)
+
+
+corrs <- cbind(select(data, Wiek, SredniaPomiar1), sex, profession, education, livingPlace)
+corrs2 <- cbind(select(data, Wiek, SredniaPomiar2), sex, profession, education, livingPlace)
+
+chart.Correlation(corrs, method="pearson")
+cor.test(data$SredniaPomiar1, livingPlace)
+chart.Correlation(corrs2, method="pearson")
 # ---------------------------------------------------------------------- #
-# 2. PRINCIPAL COMPONENT ANALYSIS --> PCA.R
+# 4. PRINCIPAL COMPONENT ANALYSIS --> PCA.R
 
-# 3. MICROBIOLOGICAL RESEARCH --> microAnalysis.R
+# 5. MICROBIOLOGICAL RESEARCH --> microAnalysis.R
 
-# 4. IMPACT OF AIR POLUTIONS IN A LIVING PLACE --> livingPlaceAnalysis.R
+# 6. IMPACT OF AIR POLUTIONS IN A LIVING PLACE --> livingPlaceAnalysis.R
 # ---------------------------------------------------------------------- #
+
+
+

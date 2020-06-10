@@ -1,12 +1,12 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{4}%
-\contentsline {section}{\numberline {1.1}Bootstrap}{4}%
-\contentsline {section}{\numberline {1.2}Principal Component Analysis}{4}%
-\contentsline {chapter}{\numberline {2}Material and methods}{5}%
-\contentsline {section}{\numberline {2.1}Material}{5}%
-\contentsline {section}{\numberline {2.2}Methods}{5}%
-\contentsline {chapter}{\numberline {3}Results}{8}%
-\contentsline {section}{\numberline {3.1}Original data}{8}%
-\contentsline {section}{\numberline {3.2}PCA results}{11}%
-\contentsline {section}{\numberline {3.3}Bootstrap}{13}%
-\contentsline {chapter}{\numberline {4}Discussion}{14}%
+\contentsline {section}{\numberline {1.1}Chronic tonsillitis}{4}%
+\contentsline {section}{\numberline {1.2}Halitosis}{5}%
+\contentsline {chapter}{\numberline {2}Material and methods}{6}%
+\contentsline {section}{\numberline {2.1}Material}{6}%
+\contentsline {section}{\numberline {2.2}Methods}{6}%
+\contentsline {chapter}{\numberline {3}Results}{9}%
+\contentsline {section}{\numberline {3.1}Original sample results}{9}%
+\contentsline {section}{\numberline {3.2}PCA results}{12}%
+\contentsline {section}{\numberline {3.3}Bootstrap results}{14}%
+\contentsline {chapter}{\numberline {4}Discussion}{18}%

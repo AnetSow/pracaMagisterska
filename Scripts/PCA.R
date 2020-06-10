@@ -23,12 +23,16 @@ eig_values
 
 
 fviz_eig(pca, addlabels = TRUE, ylim = c(0, 50)) 
+fviz_eig(pca, addlabels = TRUE, ylim = c(0, 50), ncp = 11, barfill = "skyblue2",
+         barcolor = "black", ggtheme = theme_classic()) 
+# figure_saving("3.2")
+
 
 # RESULTS FOR VARIABLES
 var <- get_pca_var(pca)
 var
 
-head(var$coord)
+var$coord
 
 # wykres korelacji zmiennych - pokazuje relacje pomiędzy wszystkimi zmiennymi
 fviz_pca_var(pca, col.var="steelblue", repel=TRUE)
@@ -43,7 +47,7 @@ fviz_pca_var(pca, col.var = "cos2",
              repel = TRUE) 
 # Z wykresów jednoznacznie wynika, ze zmienne Waga, Wzrost i Wiek nie wplywaja na przydzial obserwacji do grupy.
 
-head(var$contrib) # Contributions to the principal components
+var$contrib # Contributions to the principal components
 
 # corrplot(var$contrib, is.corr=FALSE) # aby wyr??ni? najbardziej przyczyniaj?ce si? do wariancji zmienne dla ka?dego wymiaru 
 
@@ -97,18 +101,69 @@ fviz_pca_ind(pca,
 
 
 fviz_pca_biplot(pca, 
+                # Individuals
                 geom.ind = "point", 
-                geom.var = c("arrow", "text"), 
                 col.ind = VSC_before$Grupa,
-                fill.ind = "white", 
+                fill.ind = "black",
+                label = "all",  
+                palette = c("#d73027", "#91cf60", "#1a9850"),
+                addEllipses = TRUE,
+                
+                # Variables
+                geom.var = c("arrow", "text"), 
                 col.var = "steelblue", 
-                fill.var = "brack",
-                gradient.cols = NULL, 
-                label = "all", 
-                palette = c("#C2185B", "#C5E1A7", "#1B5E20"),
-                addEllipses = FALSE,
+                gradient.cols = NULL,
+                
+                repel = TRUE,
+                ggtheme = theme_classic(),
+                
                 legend.title = "Groups",
                 title = " ")
 
+figure_saving("3.3.2")
 
 # http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/112-pca-principal-component-analysis-essentials/
+
+
+
+group <- c(rep("B", times=24),  rep("C", times=3),rep("A", times=14))
+
+fviz_pca_biplot(pca, 
+                # Variables
+                col.var="steelblue", 
+                arrowsize=0.6, 
+                labelsize=5, 
+                # Individuals
+                geom.ind = "point",  
+                col.ind=VSC_before$Grupa, 
+                palette=c("#d73027", "#91cf60", "#1a9850"), 
+                addEllipses=TRUE, ellipse.type="confidence", 
+                
+                repel=TRUE, ggtheme = theme_classic(), legend.title = "Groups", title = " ")
+
+figure_saving("3.3.3")
+
+
+# Classification checking - before tonsillectomy
+
+
+VSC_before_pca <- select(data, Wiek, PomiarIa, PomiarIb,PomiarIc, SredniaPomiar1, Wzrost, Waga)
+colnames(VSC_before_pca) <- c("Age", "Meas.Ia", "Meas.Ib", "Meas.Ic", "AvgMeas.I", "Height", "Weight")
+
+VSC_before_pca <- mutate(VSC_before_pca, Group = AvgMeas.I)
+
+VSC_before_pca$Group[VSC_before_pca$AvgMeas.I <= 100] = 1
+VSC_before_pca$Group[VSC_before_pca$AvgMeas.I > 100 & VSC_before_pca$AvgMeas.I <= 180] = 2
+VSC_before_pca$Group[VSC_before_pca$AvgMeas.I > 180 & VSC_before_pca$AvgMeas.I <= 250] = 3
+VSC_before_pca$Group[VSC_before_pca$AvgMeas.I > 250] = 4
+
+
+pca_before <- PCA(X = VSC_before_pca, graph = T)
+
+
+
+pca$call
+pca$call$row.w #      "weights for the individuals"
+pca$call$col.w # "weights for the variables"
+
+df.projected <- as.data.frame(predict(pca$X, ))
