@@ -3,7 +3,7 @@
 \usepackage[polish, english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[top=2.5cm, bottom=2.5cm, left=3.5cm, right=3.5cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, left=3.5cm, right=2.5cm]{geometry}
 \usepackage{indentfirst}
 \usepackage{float}
 \usepackage{array,multirow,graphicx}
@@ -12,6 +12,7 @@
 \usepackage{cite}
 \usepackage{gensymb}
 \usepackage{arydshln}
+%\usepackage{courier}
 
 \setlength{\dashlinedash}{0.5pt}
 
@@ -68,30 +69,23 @@
 
 \maketitle
 
-%------------------ Oświadczenie ------------------
 
+%------------------ Podziękowanie ------------------
 
-\noindent Wroc\l{}aw, dnia ...............
-\vspace{3cm}
-
-\begin{flushleft}
-\textbf{\textit{\large Oświadczenie opiekuna pracy}}
-\end{flushleft}
-Oświadczam, że niniejsza praca została przygotowana pod moim kierunkiem i stwierdzam, że spełnia ona warunki do przedstawienia jej w postępowaniu o nadanie tytułu zawodowego.
-\vspace{2cm}
+\thispagestyle{empty}
 \begin{flushright}
-Podpis opiekuna pracy……………………
+  \null\vfill
+  \large
+  \itshape
+  \rightskip=1cm
+  Za inspirację, wyrozumiałość oraz pomoc\\
+   w trakcie realizacji niniejszej pracy\\
+   pragnę złożyć serdecznie podziękowania\\
+   mojej promotor, dr Annie Mucha.\\
+  \vspace{1cm}
 \end{flushright}
 
-\vspace{2cm}
-\begin{flushleft}
-\textbf{\textit{\large Oświadczenie opiekuna pracy}}
-\end{flushleft}
-Oświadczam, że niniejsza praca została przygotowana pod moim kierunkiem i stwierdzam, że spełnia ona warunki do przedstawienia jej w postępowaniu o nadanie tytułu zawodowego.
-\vspace{2cm}
-\begin{flushright}
-Podpis autora pracy ..................................
-\end{flushright}
+
 
 %------------------- Abstrakt -------------------
 
@@ -114,9 +108,9 @@ Most of available literature is more concerned with the mathematical aspects of 
 Also, a Principal Component Analysis is gaining popularity among scientists analyzing medical data.
 
 Analysis of the available data showed that both techniques produced more satisfying results when compared to conventional statistical methods. 
-Halitosis in patients with chronic tonsillitis requires numerous additional laboratory tests and the exclusion of all other possible causes like dental and microbiological examination. After exclusion of these, halitosis might be considered as an independent indication for tonsillectomy. In this study halitosis was be eliminated effectively by tonsillectomy. \\ \\
+Halitosis in patients with chronic tonsillitis requires numerous additional laboratory tests and the exclusion of all other possible causes like dental and microbiological examination. After exclusion of these, halitosis might be considered as an independent indication for tonsillectomy. \\ \\
 
-\textbf{Keywords:} tonsillectomy, halitosis, statistical inference, bootstrap, PCA.
+\textbf{Keywords:} bootstrap, halitosis, Principal Component Analysis, statistical inference, tonsillectomy.
 
 \end{abstract}
 
@@ -138,12 +132,12 @@ The analysis of medical data is characterized by the difficulty of statistical v
 
 Moreover, these methods can be used in order to overcome problems of datasets with insufficient sizes. This approach helps in building a probability distribution based on much larger number of observations, and thus statistical inference. In general, resampling consists of multiple repetitions of a sample drawing procedure. Based on samples taken from the original data, certain conclusions are drawn about the distribution of a population\cite{Efron93}.
 
-The main purpose of this article is to present one of the possible resampling methods - the bootstrap method - and its application in the analysis of medical data. Also, Principal Component Analysis is considered to be an effective method to reduce the dimensionality of data to a few principal variables that explain most of the variance present in the original data, as well as to characterize the mutual positions of observations under given conditions. \mbox{A hypothesis} for the following analysis assumed that halitosis can be an indication of tonsillectomy.
+The main purpose of this article is to present one of the possible resampling methods - the bootstrap method - and its application in the analysis of medical data. Also, Principal Component Analysis is considered to be an effective method to reduce the dimensionality of data to a few principal variables that explain most of the variance present in the original data, as well as to characterize the mutual positions of observations under given conditions. A hypothesis for the following analysis assumed that halitosis can be an indication of tonsillectomy.
 
 
 \section{The structure and role of tonsils}
 
-Palatine tonsils belong to a system of lymph tissue clusters located in the pharynx, on the joint section of respiratory and digestive tracts. The so-called Waldeyer's tonsillar ring was described in 1884 by Wilhelm von Waldeyer, and apart from two palatine tonsils, it also includes pharyngeal tonsil, lingual tonsil and two tubal tonsils \cite{Lapinska16}.
+Tonsils belong to a system of lymph tissue clusters located in the pharynx, on the joint section of respiratory and digestive tracts. The so-called Waldeyer's tonsillar ring was described in 1884 by Wilhelm von Waldeyer, and apart from two palatine tonsils, it also includes pharyngeal tonsil, lingual tonsil and two tubal tonsils \cite{Lapinska16}.
 
 Among them, the palatine tonsils are the biggest and resemble 2 cm long and 1 cm wide ellipsoidal formations. Their structure and location causes that they contribute to the immunological barrier for the reaching food and respiratory antigens.
 
@@ -160,7 +154,7 @@ Sometimes the only appropriate therapeutic option for diseased palatine tonsils 
 
 A better understanding of the role of tonsils in the functioning of the immune system resulted in greater caution in deciding on tonsillectomy. However, the indicators for surgery are still the subject of numerous discussions among specialists.
 
-Before qualifying for tonsillectomy, the frequency of acute bacterial tonsillitis is determined. For children, 7 or more episodes in the last year, 5 or more episodes  per year in the last 2 years, or 3 and more episodes per year in the last 3 years, are indications for tonsillectomy. One episode consists of \mbox{a sore} throat and at least one of the following symptoms: temperature greater than 38.3\degree C, tonsillar exudate, cervical adenopathy, or positive test for group A b-hemolytic streptococcus \cite{Baugh11}.
+Before qualifying for tonsillectomy, the frequency of acute bacterial tonsillitis is determined. For children, 7 or more episodes in the last year, 5 or more episodes  per year in the last 2 years, or 3 and more episodes per year in the last 3 years, are indications for tonsillectomy. One episode consists of a sore throat and at least one of the following symptoms: temperature greater than 38.3\degree C, tonsillar exudate, cervical adenopathy, or positive test for group A b-hemolytic streptococcus \cite{Baugh11}.
 
 In adult patients, tonsillectomy is fewer performed as in children. Chronic (recurrent) tonsillar infections recurring several times a year rather than tonsillar hypertrophy are more frequently a reason. Two groups of indications appear to be recognized here: absolute and relative\cite{Niedzielska03,WongChung18}. The first includes: 
 \begin{itemize}
@@ -195,14 +189,14 @@ Studies have shown that halitosis reflects complex interactions between several 
 \chapter{Material and methods}
 \section{Material}
 
-41 patients including 29 women and 13 men, ranging age from 18 to 56 years (mean 27.02, SD 7.86) with chronic tonsillitis and halitosis were qualified for tonsillectomy and therefore selected for the study. \mbox{A detailed} anamnesis was conducted by otolaryngologists and dentists, and microbiological tests were carried out in the laboratory of the Academic Clinical Hospital in Wroclaw. Also, routine laboratory tests and two surveys were conducted in order to eliminate causes of halitosis other than those indicative of tonsillitis. Patients answered questions related to their medical history, food habits, smoking cigarettes and oral hygiene. 
+41 patients including 29 women and 13 men, ranging age from 18 to 56 years (mean 27.02, SD 7.86) with chronic tonsillitis and halitosis were qualified for tonsillectomy and therefore selected for the study. A detailed anamnesis was conducted by otolaryngologists and dentists, and microbiological tests were carried out in the laboratory of the Academic Clinical Hospital in Wroclaw. Also, routine laboratory tests and two surveys were conducted in order to eliminate causes of halitosis other than those indicative of tonsillitis. Patients answered questions related to their medical history, food habits, smoking cigarettes and oral hygiene. 
 Those who confirmed the occurrence of any gastrointestinal, pulmonary or other systemic metabolic disorders in the survey were eliminated from the research group.
 Another exclusion criteria included smokers, heavy alcoholic drinkers, improper oral hygiene and \textit{Helicobacter pylori} carriers. Dental examination excluded also patients with carious lesions, exposed tooth pulps, peridonthal diseases and thick tongue coat.
 
 \section{Methods}
 
 Patients underwent both subjective and objective evaluation of oral odor. 
-For a subjective assessment of an unpleasant odor in the mouth each patient underwent organoleptic examination before tonsillectomy. Patients were neither allowed to take antibiotics for a period of three weeks, consume garlic, onion and spicy dishes for 24 hours nor apply perfume. Within 12 hours, it was also recommended to avoid food intake and drinks, brush teeth, use breath fresheners and smoke cigarettes. During the study, the smell of air exhaled through the mouth was compared with the smell of air exhaled through the nose (when mouth closed). The patient then exhaled into a transparent tube 10 cm long and 2.5 mm in diameter. In order to assess the intensity of the unpleasant smell from the mouth a six-grade Rosenberg scale was used which is the most widely used scale of halitosis \cite{Rosenberg92}. The odor was classified between 0 and 5, where: 0 - absence of odor, 1 - barely noticeable odor, 2 - slight malodor, 3 - moderate malodor, 4 - strong malodor and 5 - severe malodor.\
+For \mbox{a subjective} assessment of an unpleasant odor in the mouth each patient underwent organoleptic examination before tonsillectomy. Patients were neither allowed to take antibiotics for a period of three weeks, consume garlic, onion and spicy dishes for 24 hours nor apply perfume. Within 12 hours, it was also recommended to avoid food intake and drinks, brush teeth, use breath fresheners and smoke cigarettes. During the study, the smell of air exhaled through the mouth was compared with the smell of air exhaled through the nose (when mouth closed). The patient then exhaled into a transparent tube 10 cm long and 2.5 mm in diameter. In order to assess the intensity of the unpleasant smell from the mouth a six-grade Rosenberg scale was used which is the most widely used scale of halitosis \cite{Rosenberg92}. The odor was classified between 0 and 5, where: 0 - absence of odor, 1 - barely noticeable odor, 2 - slight malodor, 3 - moderate malodor, 4 - strong malodor and 5 - severe malodor.\
 
 For objective assessment of halitosis each patient underwent a Man-hal-II Halimeter test. This sulfide monitor measures volatile sulfur compounds such as hydrogen sulfide, methyl mercaptan and dimethyl sulfide which are contributing factors for halitosis. Each sample was taken after 3 minute re-stabilization period when patients were breathing through the nose with  mouths kept closed. During the test the device's straw was inserted into the subject’s mouth and one was asked to exhale briefly for 30 seconds. 
 The procedure was repeated in three trials for each patient and the peaks' values were recorded in parts per billion (ppb) sulfide equivalents \cite{Alasqah16}.
@@ -234,9 +228,9 @@ The average value of the three VSC measurements was used for further statistical
 \end{figure}
 
 %---PCA---
-A Principal Component Analysis (PCA) was used in order to validate the classification above. This method enables finding the directions of maximum variance in high-dimensional data and project it onto a smaller dimensional subspace while retaining most of the information. In the following work, \mbox{a self-written} R script (R version 3.6.3) was used to conduct the overall analysis. R is a programming language and free software environment used for statistical computing and visualizations supported by the R Foundation for Statistical Computing \cite{RCoreTeam13}. PCA was performed using \textit{FactoMineR} which is an R package dedicated to multivariate Exploratory Data Analysis \cite{factominer08}, as well as \textit{factoextra} to extract and visualize the results \cite{factoextra13}. There are also other, built-in R functions avaliable - \textit{princomp()} and \textit{prcomp()} from  \textit{stats} package \cite{RCoreTeam13}. The preceding one uses the spectral decomposition approach, while the functions \textit{prcomp()} and  \textit{FactoMineR::PCA()} use the singular value decomposition.
+A Principal Component Analysis (PCA) was used in order to validate the classification above. This method enables finding the directions of maximum variance in high-dimensional data and project it onto a smaller dimensional subspace while retaining most of the information. In the following work, a self-written R script \mbox{(R version 3.6.3)} was used to conduct the overall analysis. R is a programming language and free software environment used for statistical computing and visualizations supported by the R Foundation for Statistical Computing \cite{RCoreTeam13}. PCA was performed using \texttt{FactoMineR} which is an R package dedicated to multivariate Exploratory Data Analysis \cite{factominer08}, as well as \texttt{factoextra} to extract and visualize the results \cite{factoextra13}. There are also other, built-in R functions avaliable - \texttt{princomp()} and \texttt{prcomp()} from  \texttt{stats} package \cite{RCoreTeam13}. The preceding one uses the spectral decomposition approach, while the functions \texttt{prcomp()} and \texttt{FactoMineR::PCA()} use the singular value decomposition.
 
-Comparisons between groups and within groups were made using appropriate statistical tests from the \textit{stats} package as described in the third chapter. The \textit{stats} package is part of R and contains functions for statistical calculations and random number generation \cite{RCoreTeam13}. All tests were preceded by checking the assumptions authorizing to carry them out. The gender distribution was included in each comparison. 
+Comparisons between groups and within groups were made using appropriate statistical tests from the \texttt{stats} package as described in the third chapter. The \texttt{stats} package is part of R and contains functions for statistical calculations and random number generation \cite{RCoreTeam13}. All tests were preceded by checking the assumptions authorizing to carry them out. The gender distribution was included in each comparison. 
 The significance level $\alpha$ for the tested models was 5\% ($\alpha$ = 0,05).
 
 %---Bootstrap---
@@ -245,9 +239,9 @@ The bootstrap was performed by a self-written R code. Each bootstrap sample was 
 %---Other packages---
 In addition, the following packages were used:
 \begin{itemize}
-\item \textit{tidyverse}, \textit{dplyr} for data manipulation \cite{tidyverse19, dplyr18},
-\item \textit{moments}  to calculate skewness in data \cite{moments15},
-\item \textit{plotrix}, \textit{ggplot2}, \textit{corrplot} for data visualization \cite{plotrix06, ggplot216, corrplot17}.
+\item \texttt{tidyverse}, \texttt{dplyr} for data manipulation \cite{tidyverse19, dplyr18},
+\item \texttt{moments}  to calculate skewness in data \cite{moments15},
+\item \texttt{plotrix}, \texttt{ggplot2}, \texttt{corrplot} for data visualization \cite{plotrix06, ggplot216, corrplot17}.
 \end{itemize}
 
 
@@ -267,8 +261,8 @@ Due to the relatively small research sample's size, the statistical inference pr
 \section{Original sample results}
 
 %---General statistics---
-Table \ref{tab:General_stats} summarizes the comparison of features: age, living place, profession and education between men and women in the original data. Student's \mbox{t test} (\textit{stats::t.test}) was used to test the significance of differences in means of age after checking normality of the distribution and homogeneity of variance. Those assumptions were verified each time with Shapiro-Wilk Normality Test (\textit{stats::shapiro.test}) and F Test to Compare Two Variances (\textit{stats::var.test}). 
-Categorical data - living place, profession, education - were tested with Fisher's Exact Test for Count Data (\textit{stats:fisher.test}) since the condition for  $\chi^2 $ test of independence (number of observations in a single cell greater than 5) was not fulfilled. 
+Table \ref{tab:General_stats} summarizes the comparison of features: age, living place, profession and education between men and women in the original data. Student's \mbox{t test} (\texttt{stats::t.test}) was used to test the significance of differences in means of age after checking normality of the distribution and homogeneity of variance. Those assumptions were verified each time with Shapiro-Wilk Normality Test (\texttt{stats:: shapiro.test}) and F Test to Compare Two Variances (\texttt{stats::var.test}). 
+Categorical data - living place, profession, education - were tested with Fisher's Exact Test for Count Data (\texttt{stats::fisher.test}) since the condition for  $\chi^2 $ test of independence (number of observations in a single cell greater than 5) was not fulfilled. 
 No statistically significant difference was observed in terms of analyzed features (p > 0.05). 
 
 \begin{table}[H]
@@ -314,9 +308,9 @@ No statistically significant difference was observed in terms of analyzed featur
 
 
 %---Halitometry---
-The comparisons of VSC levels between men and women were made with Wilcoxon test (\textit{stats::wilcox.test}) due to heterogeneity of variance between groups. According to p-values 0.5378 and 0.8185, the null hypothesis saying that the mean VSC levels for women and men were equal both before and after tonsillectomy failed to reject (Tab. \ref{tab:Halitometry_results}). 
+The comparisons of VSC levels between men and women were made with Wilcoxon test (\texttt{stats::wilcox.test}) due to heterogeneity of variance between groups. According to p-values 0.5378 and 0.8185, the null hypothesis saying that the mean VSC levels for women and men were equal both before and after tonsillectomy failed to reject (Tab. \ref{tab:Halitometry_results}). 
 
-Levels of VSC before and after tonsillectomy (for whole sample) were compared using a paired Student's t test (\textit{stats::t.test}) after bringing the prior to a normal distribution. Originally, the average level of VSC had a right-skewed distribution with coefficient  = 0.787. Taking a square root of this variable turned out to be enought to decrease the coefficient of skewness to 0.018 which is close to zero and meet the assumptions of normality in Shapiro-Wilk Normality test \cite{Wilcox18}.
+Levels of VSC before and after tonsillectomy (for whole sample) were compared using a paired Student's t test (\texttt{stats::t.test}) after bringing the prior to a normal distribution. Originally, the average level of VSC had a right-skewed distribution with coefficient  = 0.787. Taking a square root of this variable turned out to be enought to decrease the coefficient of skewness to 0.018 which is close to zero and meet the assumptions of normality in Shapiro-Wilk Normality test \cite{Wilcox18}.
 According to p-value < 0.05, the null hypothesis about equality of the average VSC levels in both groups was rejected, thus the distributions of those variables differed significantly. The level of VSC in the exhaled air was effectively lowered as a result of tonsillectomy.
 
 \begin{table}[H]
@@ -349,7 +343,7 @@ There was only one patient left with minor halitosis after the removal of palati
 In general, the avarage level of VSC dropped by 106.50 ppb compared to pre-tonsillectomy measurements as shown in the Figure \ref{fig:Fig_3.1}.
 
 
-\begin{figure}[hbt!]
+\begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.85\textwidth}
 		\centering
@@ -376,27 +370,27 @@ In general, the avarage level of VSC dropped by 106.50 ppb compared to pre-tonsi
 \newpage
 \section{PCA results}
 
-Since Principal Component Analysis can be applied only to numerical problems, a subset of numerical variables from the original data was created. The analysis concerned the following features: age, three VSC measurements before and VSC three measurements after tonsillectomy, two averages of these measurements, height and weight (41 individuals and 11 variables in total). This subset of data was used as an input to \textit{FactoMineR::PCA} function which created an object containing information listed below: 
+Since Principal Component Analysis can be applied only to numerical problems, a subset of numerical variables from the original data was created. The analysis concerned the following features: age, three VSC measurements before and VSC three measurements after tonsillectomy, two averages of these measurements, height and weight (41 individuals and 11 variables in total). This subset of data was used as an input to \texttt{FactoMineR::PCA} function which created an object containing information listed below: 
 
 \begin{enumerate}
-\item \$eig - eigenvalues
-\item \$var - results for the variables
-\item \$var\$coord - coordinates for the variables
-\item \$var\$cor - correlations variables - dimensions
-\item \$var\$cos2 - cos2 for the variables
-\item \$var\$contrib - contributions of the variables
-\item \$ind - results for the individuals
-\item \$ind\$coord - coordinates for the individuals
-\item \$ind\$cos2 - cos2 for the individuals
-\item \$ind\$contrib - contributions of the individuals
-\item \$call - summary statistics
-\item \$call\$centre - mean of the variables
-\item \$call\$ecart.type - standard error of the variables
-\item \$call\$row.w - weights for the individuals
-\item \$call\$col.w - weights for the variables.
+\item \texttt{\$eig} - eigenvalues
+\item \texttt{\$var} - results for the variables
+\item \texttt{\$var\$coord} - coordinates for the variables
+\item \texttt{\$var\$cor} - correlations variables - dimensions
+\item \texttt{\$var\$cos2} - cos2 for the variables
+\item \texttt{\$var\$contrib} - contributions of the variables
+\item \texttt{\$ind} - results for the individuals
+\item \texttt{\$ind\$coord} - coordinates for the individuals
+\item \texttt{\$ind\$cos2} - cos2 for the individuals
+\item \texttt{\$ind\$contrib} - contributions of the individuals
+\item \texttt{\$call} - summary statistics
+\item \texttt{\$call\$centre} - mean of the variables
+\item \texttt{\$call\$ecart.type} - standard error of the variables
+\item \texttt{\$call\$row.w} - weights for the individuals
+\item \texttt{\$call\$col.w} - weights for the variables.
 \end{enumerate}
 
-An important stage preceding the proper analysis of data is their standarization in order to avoid falsifying the obtained results. This is particularly recommended when variables are measured in different scales (e.g ppb, kilograms, centimeters) but also when the mean or the standard deviation of variables are largely different. After scaling the obtained variables are comparable and have standard deviation one and mean zero. The function \textit{PCA} standardizes the data by default.
+An important stage preceding the proper analysis of data is their standarization in order to avoid falsifying the obtained results. This is particularly recommended when variables are measured in different scales (e.g ppb, kilograms, centimeters) but also when the mean or the standard deviation of variables are largely different. After scaling the obtained variables are comparable and have standard deviation one and mean zero. The function \texttt{PCA()} standardizes the data by default.
 
 In order to determine the minimum number of principal components (PCs) that account for most of the variation in analyzed data two methods were used. The first one was based on the proportion of variance that the components explain. The acceptance level of variance was set to 80\%, thus PC3 might be taken as the cut-off point (Tab. \ref{tab:Eigenvalues}).
 
@@ -424,7 +418,7 @@ In order to determine the minimum number of principal components (PCs) that acco
 	\label{tab:Eigenvalues}
 \end{table}
 
-An alternative method of estimating the number of principal components is a scree plot (Fig. \ref{fig:Fig_3.2}), which sorts the eigenvalues in descending order. The number of PCs is selected at the point where there is a relative decrease in the amount of variance explained by given component. In that case, both methods indicated the same cut-off point which was the third principal component (PC3) meaning that first three principal components explain 82.61\% of variation in the data.
+An alternative method of estimating the number of principal components is a scree plot (Fig. \ref{fig:Fig_3.2}), which sorts the eigenvalues in descending order. The number of PCs is selected at the point where there is \mbox{a relative} decrease in the amount of variance explained by given component. In that case, both methods indicated the same cut-off point which was the third principal component (PC3) meaning that first three principal components explain 82.61\% of variation in the data.
 
 \begin{figure}[hbt!]
 	\centering
@@ -459,18 +453,19 @@ Examining magnitude and direction of coefficients for the original variables all
 \end{table}
 
 \newpage
-A PCA biplot visualizes both principal component scores of the observations (so called score plot) and loadings of variables (a loading plot). In general, a biplot is a projection of high-dimensional space onto a two-dimensional plane. In the Figure \ref{fig:Fig_3.3} all different-shaped points are the projected observations and vectors are the projected variables. Each observation is displayed in the figure keeping its original axes \cite{Zhang17}. 
+A PCA biplot visualizes both principal component scores of the observations (so called \textit{score plot}) and loadings of variables (a \textit{loading plot}). In general, a biplot is a projection of high-dimensional space onto a two-dimensional plane. In the Figure \ref{fig:Fig_3.3} all different-shaped points are the projected observations and vectors are the projected variables. Each observation is displayed in the figure keeping its original axes \cite{Zhang17}. 
 
 Biplots permit a broad interpretation. For instance, points situated closely to each other represent intuitively the observations with similar values. In the figure below clusters were identified on the basis of pre-tonsillectomy VSC levels and 95\% confidence ellipses were added. The centroids mark the barycentres of the points belonging to the same cluster.
 
-The relative coordinates of an observation might be approximated by projecting the point onto the variable vectors. However, since the vectors have been centered and scaled they cannot be used to estimate the exact coordinates.
-
-\begin{figure}[!hb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth, height=.91\textwidth]{./Figures/Fig_3.3.3}
 	\caption{A biplot showing both principal component scores for individuals categorized into three groups and loadings of variables}
 	\label{fig:Fig_3.3}
 \end{figure}	
+
+
+The relative coordinates of an observation might be approximated by projecting the point onto the variable vectors. However, since the vectors have been centered and scaled they cannot be used to estimate the exact coordinates.
 
 Next, the cosine of the angle between pairs of vectors represents a correlation between the corresponding variables. Highly correlated variables point in similar directions, while uncorrelated variables are nearly perpendicular to each other. As can be noticed, all variables associated with VSC measurements before tonsillectomy (Meas.Ia, Meas.Ib, Meas.Ic and AvgMeas.I) were closely correlated. The same applied to VSC measurements after tonsillectomy (Meas.IIa, Meas.IIb, Meas.IIc and AvgMeas.II). At the same time, pre- and post-surgery VSC levels did not correlate with each other indicating significant differences and the effectiveness of tonsillectomy.
  
@@ -485,7 +480,7 @@ Based on the drawn bootstrap samples, the distributions parameters of features d
 
 Table \ref{tab:General_stats_boot} summarizes the results of the bootstrap procedure. 
 A variety of sample statistics, such as the mean, standard deviation, median and range was calculated for women, men and whole bootstrap population.
-The $\chi^2 $ goodness of fit test (\textit{stats::chisq.test}) was performed for the categorical data in opposite to Fisher's Exact Test for Count Data which was performed for the original sample.
+The $\chi^2 $ goodness of fit test (\texttt{stats::chisq.test}) was performed for the categorical data in opposite to Fisher's Exact Test for Count Data which was performed for the original sample.
 The variable of Age was compared with the Wilcoxon test due to the lack of normal distribution.
 
 At 0.05 significance level, the null hypothesis saying that the patients (either within one sex or between both sexes) are equally distributed across education, profession and living place, was rejected. Also, the null hypothesis saying that the age of female and male come from identical distribution was not accepted.
@@ -618,7 +613,7 @@ Due to many other possible indications for removal of palatine tonsils, a restri
 
 Halitosis was assessed using two common methods - organoleptic and halitometric. A positive correlation was observed between Rosenberg's score and VSC concentration both before and after surgery. Higher Pearson coefficients was obtained while comparing VSC levels measured before tonsillectomy in comparison to the outcomes of measurements after the surgery. The effectiveness of the organoleptic method seems to depend on VSC level which makes it less effective (Fig. {\ref{fig:RSES_correlation}}). The more intense the problems with the unpleasant odor, the better the coverage of organoleptic and halimetric test results. Although the organoleptic evalutaion with six-level scale seems to give better results when compare to three-level scale \cite{MesquitaGuimaraes17}, both compared methods should be used complementarily, not separately.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{./Figures/RSES_correlation}
 	\caption{Correlation between Rosenberg scores and halitometry outcomes. RSES - Rosenberg scale, pre - VSC level before tonsillectomy, post - VSC level after tonsillectomy.}
@@ -640,7 +635,7 @@ In context of bootstrap, Davison and Kuonen \cite{Davison03} stressed that consi
 In order to reduce the number of dimensions of data as well as to check the relevance of thresholds dividing into groups of observations (A, B and C), a Principal Component Analysis was performed. PCA analysis reports as many PCs as the number of variables included in the analyses. However, we can observe that the first three PCs are responsible for the majority of the variance in the data which is 82.61\%. 
 The group allocation also seems to be consistent, as can be seen from the biplot (Fig. \ref{fig:Fig_3.3}) in which group B is the most numerous and group C is the least numerous.
 
-Results of PCA for other data sets are often more challenging. Bigger amount of predictors included in the PCA, might result in bigger number of PCs selected, and thus increase the model size. In general, it aims to select the principal components with the largest variance in order to keep only those explaining enough variance to make epidemiological and clinical sense \cite{Zhang17}.
+Results of PCA for other data sets are often more challenging. More predictors included in the PCA might result in a bigger number of PCs selected, and thus increase the model size. In general, it aims to select the principal components with the largest variance in order to keep only those explaining enough variance to make epidemiological and clinical sense \cite{Zhang17}.
 
 To sum up, described techniques might complement  nonparametric statistical methods and should, where appropriate, be included in data processing methodologies. The methods have proved to be useful especially in the analysis of medical data.
 
@@ -652,62 +647,62 @@ To sum up, described techniques might complement  nonparametric statistical meth
 
 \bibitem{Efron93} Efron B, Tibshirani RJ (1993) \emph{An Introduction to the Bootstrap}, Chapman \&  Hall. 
 
-\bibitem{Lapinska16} Łapińska I, Zawadzka-Glos L (2016) \emph{Adenoid and tonsils hypertrophy - Symptoms and treatment} New Medicine, 20(4): 103-106.
+\bibitem{Lapinska16} Łapińska I, Zawadzka-Glos L (2016) \emph{Adenoid and tonsils hypertrophy - Symptoms and treatment}, New Medicine 20(4): 103-106.
 
-\bibitem{Niedzielska03} Niedzielska G. (2003) \emph{Postępowanie w nawracających zapaleniach migdałków podniebiennych u dzieci}, Otorynolaryngologia 2 (1), 8–10.
+\bibitem{Niedzielska03} Niedzielska G. (2003) \emph{Postępowanie w nawracających zapaleniach migdałków podniebiennych u dzieci}, Otorynolaryngologia 2(1): 8–10.
 
-\bibitem{McNeill60} McNeill RA (1960) \emph{A History of Tonsillectomy: Two Millenia of Trauma, Haemorrhage and Controversy} Ulster Medical Journal, 29(1), 59-63. 
+\bibitem{McNeill60} McNeill RA (1960) \emph{A History of Tonsillectomy: Two Millenia of Trauma, Haemorrhage and Controversy}, Ulster Medical Journal 29(1): 59-63. 
 
-\bibitem{Baugh11} Baugh RF et al. (2011) \emph {Clinical practice guideline: tonsillectomy in children},  Otolaryngology-Head and Neck Surgery, 144, S1-S30.
+\bibitem{Baugh11} Baugh RF et al. (2011) \emph {Clinical practice guideline: tonsillectomy in children},  Otolaryngology-Head and Neck Surgery, 144: S1-S30.
 
-\bibitem{WongChung18} Wong Chung JERE et al. (2018) \emph{Tonsillotomy Versus Tonsillectomy in Adults Suffering From Tonsil-Related Afflictions: A Systematic Review} Acta Otolaryngol. 138(5), 492-501.
+\bibitem{WongChung18} Wong Chung JERE et al. (2018) \emph{Tonsillotomy Versus Tonsillectomy in Adults Suffering From Tonsil-Related Afflictions: A Systematic Review}, Acta Otolaryngologica 138(5): 492-501.
 
 %\bibitem{Burton08} Burton M. Commentary (2008) \emph{Tonsillectomy — then and now},  International Journal of Epidemiology 37, 23–25.
 
-\bibitem{Bochnia05} Bochnia M, Dziewiszek W, Rostkowska-Nadolska (2005) \emph{Tonsylektomia w XXI wieku}, Family Medicine \& Primary Care Review, 7,  874–881.
+\bibitem{Bochnia05} Bochnia M, Dziewiszek W, Rostkowska-Nadolska (2005) \emph{Tonsylektomia w XXI wieku}, Family Medicine \& Primary Care Review 7:  874–881.
 
-\bibitem{Kotti15} Kotti AB, Subramanyam RV (2015) \emph{Oral malodor: A review of etiology and pathogenesis}, Journal of Dr. NTR University of Health Sciences 4(1), 1-7.
+\bibitem{Kotti15} Kotti AB, Subramanyam RV (2015) \emph{Oral malodor: A review of etiology and pathogenesis}, Journal of Dr. NTR University of Health Sciences 4(1): 1-7.
 
-\bibitem{Rosenberg92} Rosenberg M, McCulloch CAG (1992) \emph{Measurement of Oral Malodor: Current Methods and Future Prospects}, Journal of Periodontology 63, 776–782.
+\bibitem{Rosenberg92} Rosenberg M, McCulloch CAG (1992) \emph{Measurement of Oral Malodor: Current Methods and Future Prospects}, Journal of Periodontology 63: 776–782.
 
-\bibitem{Alasqah16} Alasqah M, Khan S, Elqomsan MA, Gufran K, Kola Z, Bin Hamza MO (2016) \emph{Assessment of halitosis using the organoleptic method and volatile sulfur compounds monitoring}, Journal of Dental Research and Review 3(3), 94-98.
+\bibitem{Alasqah16} Alasqah M, Khan S, Elqomsan MA, Gufran K, Kola Z, Bin Hamza MO (2016) \emph{Assessment of halitosis using the organoleptic method and volatile sulfur compounds monitoring}, Journal of Dental Research and Review 3(3): 94-98.
 
-\bibitem{Lee04} Lee PP, Mak WY, Newsome P (2004) \emph{The aetiology and treatment of oral halitosis: an update}, Hong Kong Medical Journal  10, 414–418.
+\bibitem{Lee04} Lee PP, Mak WY, Newsome P (2004) \emph{The aetiology and treatment of oral halitosis: an update}, Hong Kong Medical Journal  10: 414–418.
 
 \bibitem{RCoreTeam13} R Core Team (2013) \emph{R: A language and environment for statistical computing}, R Foundation for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/.
 
-\bibitem{factominer08} L\^e S, Josse J, Husson F (2008) \emph{FactoMineR: A Package for Multivariate Analysis}, R package version 2.3. Journal of Statistical Software, 25(1), 1–18.
+\bibitem{factominer08} L\^e S, Josse J, Husson F (2008) \emph{FactoMineR: A Package for Multivariate Analysis}, R package version 2.3. Journal of Statistical Software 25(1): 1–18.
 
 \bibitem{factoextra13} Kassambara A, Mundt F (2013) \emph{factoextra: Extract and Visualize the Results of Multivariate Data Analyses}, R package version 1.0.6.
 
-\bibitem{tidyverse19} Wickham H et al. (2019) \emph{Welcome to the tidyverse}, Journal of Open Source Software, 4(43), 1686.
+\bibitem{tidyverse19} Wickham H et al. (2019) \emph{Welcome to the tidyverse}, Journal of Open Source Software 4(43): 1686.
 
 \bibitem{dplyr18} Wickham H et al. (2018) \emph{dplyr: A Grammar of Data Manipulation}, R package version 0.8.4. https://CRAN.R-project.org/package=dplyr.
 
 \bibitem{moments15} Komsta L, Novomestky F (2015) \emph{moments: Moments, cumulants, skewness, kurtosis and related tests},  R package version 0.14. https://CRAN.R-project.org/package=moments.
 
-\bibitem{plotrix06} Lemon J (2006) \emph{Plotrix: a package in the red light district of R}, R-News, 6(4), 8-12. 
+\bibitem{plotrix06} Lemon J (2006) \emph{Plotrix: a package in the red light district of R}, R-News 6(4): 8-12. 
 
 \bibitem{ggplot216} Wickham H (2016) \emph{ggplot2: Elegant Graphics for Data Analysis}, Springer-Verlag New York. ISBN 978-3-319-24277-4, https://ggplot2.tidyverse.org. 
 
-\bibitem{corrplot17} Wei T, Simko V (2017) \emph{R package ,,corrplot": Visualization of a Correlation Matrix}, (Version 0.84).
+\bibitem{corrplot17} Wei T, Simko V (2017) \emph{R package ,,corrplot": Visualization of a Correlation Matrix}, R package version 0.84.
 
-\bibitem{Wilcox18} Wilcox R, Peterson TJ, McNitt-Gray JL (2018) \emph{Data Analyses When Sample Sizes Are Small: Modern Advances for Dealing With Outliers, Skewed Distributions, and Heteroscedasticity}, Journal of Applied Biomechanics 34(4), 258-261.
+\bibitem{Wilcox18} Wilcox R, Peterson TJ, McNitt-Gray JL (2018) \emph{Data Analyses When Sample Sizes Are Small: Modern Advances for Dealing With Outliers, Skewed Distributions, and Heteroscedasticity}, Journal of Applied Biomechanics 34(4): 258-261.
 
-\bibitem{Pattengale10} Pattengale ND, Alipour M, Bininda-Emonds OR, Moret BM, Stamatakis A. (2010) \emph{How many bootstrap replicates are necessary?} Journal of Computational Biology, 17(3), 337‐354.
+\bibitem{Pattengale10} Pattengale ND, Alipour M, Bininda-Emonds OR, Moret BM, Stamatakis A. (2010) \emph{How many bootstrap replicates are necessary?}, Journal of Computational Biology 17(3): 337‐354.
 
 \bibitem{Davison97} Davison AC, Hinkley DV (1997) \emph{Bootstrap Methods and Their Application}, Cambridge, UK: Cambridge University Press.
 
 %\bibitem{Blustoniec77} Blustoniec C (1997) \emph{Status of tonsillectomy and adenoidectomy}, Laryngoscope, 8, 1233.
 
 
-\bibitem{MesquitaGuimaraes17} de Mesquita‑Guimaraes, et al. (2017) \emph{Organoleptic reproducibility for halitosis}, European Journal of General Dentistry 6(1), 9-13.
+\bibitem{MesquitaGuimaraes17} de Mesquita‑Guimaraes, et al. (2017) \emph{Organoleptic reproducibility for halitosis}, European Journal of General Dentistry 6(1): 9-13.
 
 \bibitem{Burton14} Burton MJ, Glasziou PP, Chong L, Venekamp RP (2014) \emph{Tonsillectomy or adenotonsillectomy versus non‐surgical treatment for chronic/recurrent acute tonsillitis}, Cochrane Database of Systematic Reviews 11, Art. No.: CD001802.  
 
-\bibitem{Davison03}  Davison AC, Kuonen D (2003) \emph{An Introduction to the Bootstrap with Applications in R}, Statistical Computing \& Statistical Graphics Newsletter 13(1), 6-11.
+\bibitem{Davison03}  Davison AC, Kuonen D (2003) \emph{An Introduction to the Bootstrap with Applications in R}, Statistical Computing \& Statistical Graphics Newsletter 13(1): 6-11.
 
-\bibitem{Zhang17} Zhang Z, Castello A (2017)\emph{Principal components analysis in clinical studies}, Annals of Translational Medicine 5(17), 351.
+\bibitem{Zhang17} Zhang Z, Castello A (2017)\emph{Principal components analysis in clinical studies}, Annals of Translational Medicine 5(17): 351.
 %Bridge P. D., and Sawilowsky, S. S. (1999), "Increasing Physicians' Awareness of the Impact of Statistics on Research Outcomes: Comparative Power of the t Test and Wilcoxon Rank-Sum Test in Small Samples Applied Research," Journal of Clinical Epidemiology, 52, 229-235
 % Skovlund, E.,  andFenstad, G. U. (2001), "Should We Always Choose a Nonpara metric Test When Comparing Two Apparently Nonnormal Distributions?" Journal of Clinical Epidemiology, 54, 86-92. 
 %Welch, B.  L. (1938), "The Significance of  the Difference Between Two Means When the Population Variances are Unequal," Biometrika, 29, 350-362. 

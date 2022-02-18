@@ -36,14 +36,6 @@ data %>%
              TownAbove_50k = sum(!is.na(MiastoPowyzej50tys)))/n*100
 
 summary(data$Wiek) # summary for age
-# binwidth=0
-# require(ggplot2)
-# if ( is.null(binwidth) )
-#   binwidth = diff(range(data$Wiek))/30
-# p = ggplot(data.frame(x=data$Wiek),aes(x=x)) +
-#   geom_histogram(aes(y=..density..),binwidth=binwidth) +
-#   geom_density(color="red")
-# plot(p)
 
 data %>% 
   count(KategoriaZawodowa) %>% 
